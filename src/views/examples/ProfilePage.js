@@ -359,99 +359,124 @@ export default function ProfilePage() {
         <section className="section">
           <Container>
             <Row>
+
               <Col md="6">
+
                 <Card className="card-plain">
+
                   <CardHeader>
-                    <h1 className="profile-title text-left">Contact</h1>
+
+                    <h1 className="profile-title text-left">Conteúdo</h1>
                     <h5 className="text-on-back">03</h5>
                   </CardHeader>
+
                   <CardBody>
-                    <Form>
-                      <Row>
-                        <Col md="6">
-                          <FormGroup>
-                            <label>Your Name</label>
-                            <Input defaultValue="Mike" type="text" />
-                          </FormGroup>
-                        </Col>
-                        <Col md="6">
-                          <FormGroup>
-                            <label>Email address</label>
-                            <Input placeholder="mike@email.com" type="email" />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col md="6">
-                          <FormGroup>
-                            <label>Phone</label>
-                            <Input defaultValue="001-12321345" type="text" />
-                          </FormGroup>
-                        </Col>
-                        <Col md="6">
-                          <FormGroup>
-                            <label>Company</label>
-                            <Input defaultValue="CreativeTim" type="text" />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col md="12">
-                          <FormGroup>
-                            <label>Message</label>
-                            <Input placeholder="Hello there!" type="text" />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Button
-                        className="btn-round float-right"
-                        color="primary"
-                        data-placement="right"
-                        id="tooltip341148792"
-                        type="button"
-                      >
-                        Send text
-                      </Button>
-                      <UncontrolledTooltip
-                        delay={0}
-                        placement="right"
-                        target="tooltip341148792"
-                      >
-                        Can't wait for your message
-                      </UncontrolledTooltip>
-                    </Form>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </CardBody>
+                  <CardBody>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/TfsO0BGvGn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </CardBody>
+                  <CardBody>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BXqUH86F-kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                   </CardBody>
                 </Card>
               </Col>
+
               <Col className="ml-auto" md="4">
                 <div className="info info-horizontal">
                   <div className="icon icon-primary">
-                    <i className="tim-icons icon-square-pin" />
+                    <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Find us at the office</h4>
+                    <h4 className="info-title">HTML5 e CSS3</h4>
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br />
-                      7652 Bucharest, <br />
-                      Romania
+                     Curso Completo e Atual <br />
+                     Módulo 1 de 5
+                       <br />
+                       41 Videos
+
                     </p>
                   </div>
                 </div>
                 <div className="info info-horizontal">
                   <div className="icon icon-primary">
-                    <i className="tim-icons icon-mobile" />
+                    <i className="tim-icons icon-money-coins" />
+                  </div>
+
+                  <div className="description">
+                    <h4 className="info-title">Gratuito</h4>
+                    <p>
+                      <br />
+                       <br />
+                       <br />
+                       <br />
+
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-primary">
+                    <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Give us a ring</h4>
+                    <h4 className="info-title">PHP</h4>
                     <p>
-                      Michael Jordan <br />
-                      +40 762 321 762 <br />
-                      Mon - Fri, 8:00-22:00
+                    Curso Completo e Atual <br />
+                    41 Videos
+                       <br />
+
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-primary">
+                    <i className="tim-icons icon-money-coins" />
+                  </div>
+
+                  <div className="description">
+                    <h4 className="info-title">Gratuito</h4>
+                    <p>
+                     <br />
+                       <br />
+                       <br />
+                       <br />
+
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-primary">
+                    <i className="tim-icons icon-paper" />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">JavaScript</h4>
+                    <p>
+                    Curso Completo e Atual <br />
+                    17 Aulas
+                       <br />
+                       33 Videos
+
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-primary">
+                    <i className="tim-icons icon-money-coins" />
+                  </div>
+
+                  <div className="description">
+                    <h4 className="info-title">Gratuito</h4>
+                    <p>
+                       <br />
+                       <br />
+
                     </p>
                   </div>
                 </div>
               </Col>
+
             </Row>
+
           </Container>
         </section>
         <Footer />
