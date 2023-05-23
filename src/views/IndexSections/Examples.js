@@ -1,23 +1,5 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
-// reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
 export default function Examples() {
@@ -28,39 +10,78 @@ export default function Examples() {
       <Container className="text-center">
         <Row>
           <Col sm="6">
-            <Link to="landing-page">
+            <h1 style={{ marginTop: "20px" }}>Rocketseat</h1>
+            <Link to="platform-page">
               <img
                 alt="..."
                 className="img-raised"
-                src={require("assets/img/landing-page.png")}
+                src={require("assets/img/rocketimage1.png")}
               />
             </Link>
             <Button
               className="btn-simple btn-round"
               color="primary"
-              to="landing-page"
+              to="platform-page"
               tag={Link}
             >
-              View Landing Page
+              Veja a Plataforma
             </Button>
           </Col>
           <Col sm="6">
-            <Link to="profile-page">
+            <h1 style={{ marginTop: "20px" }}>Digital Innovation One</h1>
+            <Link to="platform-page">
               <img
                 alt="..."
                 className="img-raised"
-                src={require("assets/img/profile-page.png")}
+                src={require("assets/img/dioimage1.png")}
               />
             </Link>
             <Button
               className="btn-simple btn-round"
               color="primary"
-              to="profile-page"
+              to="platform-page"
               tag={Link}
             >
-              View Profile Page
+              Veja a Plataforma
             </Button>
           </Col>
+          <Col sm="6">
+            <h1 style={{ marginTop: "20px" }}>FreeCodeCamp</h1>
+            <Link to="platform-page">
+              <img
+                alt="..."
+                className="img-raised"
+                src={require("assets/img/freeimage1.png")}
+              />
+            </Link>
+            <Button
+              className="btn-simple btn-round"
+              color="primary"
+              to="platform-page"
+              tag={Link}
+            >
+              Veja a Plataforma
+            </Button>
+          </Col>
+          <Col sm="6">
+            <h1 style={{ marginTop: "20px" }}>Coursera</h1>
+            <Link to="platform-page">
+              <img
+                alt="..."
+                className="img-raised"
+                src={require("assets/img/courseraimage1.png")}
+              />
+            </Link>
+            <Button
+              className="btn-simple btn-round"
+              color="primary"
+              to="platform-page"
+              tag={Link}
+            >
+              Veja a Plataforma
+            </Button>
+          </Col>
+          {/* Rest of the code */}
         </Row>
       </Container>
     </div>

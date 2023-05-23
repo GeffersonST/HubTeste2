@@ -142,11 +142,12 @@ export default function Signup() {
               <CardBody>
                 <Badge className="badge-default">Tecnologia</Badge>
                 <Badge className="badge-default">Educação</Badge>
-                <Badge className="badge-default">Engajamento</Badge>
+                <Badge className="badge-default">Escritora</Badge>
                 <Badge className="badge-default">
-                  Fundador do Curso em Vídeo
+                  Estados Unidos
                 </Badge>
-                <Badge className="badge-default">Ensino de Qualidade</Badge>
+                <Badge className="badge-default">Angular</Badge>
+                <Badge className="badge-default">Palestrante</Badge>
               </CardBody>
               <CardFooter>
                 <img
@@ -175,11 +176,13 @@ export default function Signup() {
               <CardBody>
                 <Badge className="badge-default">Tecnologia</Badge>
                 <Badge className="badge-default">Educação</Badge>
-                <Badge className="badge-default">Engajamento</Badge>
+                <Badge className="badge-default">Mobile</Badge>
                 <Badge className="badge-default">
-                  Fundador do Curso em Vídeo
+                  Games
                 </Badge>
-                <Badge className="badge-default">Ensino de Qualidade</Badge>
+                <Badge className="badge-default">Freelancer</Badge>
+                <Badge className="badge-default">IOS</Badge>
+                <Badge className="badge-default">X-Team</Badge>
               </CardBody>
               <CardFooter>
                 <img
@@ -190,7 +193,7 @@ export default function Signup() {
                 />
                 <Button
                   className="btn-round"
-                  href="/profile-page3"
+                  href="/profile-page4"
                   color="info"
                   size="lg"
                 >

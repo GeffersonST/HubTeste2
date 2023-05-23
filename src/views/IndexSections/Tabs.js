@@ -29,7 +29,7 @@ import {
   CardBody,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
 } from "reactstrap";
 
 export default function Tabs() {
@@ -44,9 +44,7 @@ export default function Tabs() {
         <Row>
           <Col className="ml-auto mr-auto" md="10" xl="6">
             <div className="mb-3">
-              <small className="text-uppercase font-weight-bold">
-
-              </small>
+              <small className="text-uppercase font-weight-bold"></small>
             </div>
             <Card>
               <CardHeader>
@@ -54,37 +52,37 @@ export default function Tabs() {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: iconTabs === 1
+                        active: iconTabs === 1,
                       })}
                       onClick={(e) => setIconsTabs(1)}
                       href="#pablo"
                     >
                       <i className="tim-icons icon-spaceship" />
-                      Profile
+                      Profissionais
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: iconTabs === 2
+                        active: iconTabs === 2,
                       })}
                       onClick={(e) => setIconsTabs(2)}
                       href="#pablo"
                     >
                       <i className="tim-icons icon-settings-gear-63" />
-                      Settings
+                      Plataformas
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: iconTabs === 3
+                        active: iconTabs === 3,
                       })}
                       onClick={(e) => setIconsTabs(3)}
                       href="#pablo"
                     >
                       <i className="tim-icons icon-bag-16" />
-                      Options
+                      Gratuito
                     </NavLink>
                   </NavItem>
                 </Nav>
@@ -93,39 +91,36 @@ export default function Tabs() {
                 <TabContent className="tab-space" activeTab={"link" + iconTabs}>
                   <TabPane tabId="link1">
                     <p>
-                      Collaboratively administrate empowered markets via
-                      plug-and-play networks. Dynamically procrastinate B2C
-                      users after installed base benefits. <br />
-                      <br />
-                      Dramatically visualize customer directed convergence
-                      without revolutionary ROI.
+                      Explore a categoria de Perfis de Professores e
+                      Influenciadores na Programação do nosso aplicativo Code
+                      Hub e mergulhe em um mundo de conhecimento e inspiração.
+                      Aqui você encontrará uma seleção exclusiva de
+                      profissionais e influenciadores renomados no campo da
+                      programação, prontos para compartilhar seus conhecimentos,
+                      dicas e experiências com você.
                     </p>
                   </TabPane>
                   <TabPane tabId="link2">
                     <p>
-                      Completely synergize resource taxing relationships via
-                      premier niche markets. Professionally cultivate one-to-one
-                      customer service with robust ideas. <br />
-                      <br />
-                      Dynamically innovate resource-leveling customer service
-                      for state of the art customer service.
+                      Aqui, você terá acesso a uma variedade de plataformas de
+                      ensino renomadas, projetadas para ajudar você a dominar
+                      diversas linguagens de programação, conceitos avançados e
+                      tecnologias emergentes.
                     </p>
                   </TabPane>
                   <TabPane tabId="link3">
                     <p>
-                      Efficiently unleash cross-media information without
-                      cross-media value. Quickly maximize timely deliverables
-                      for real-time schemas. <br />
-                      <br />
-                      Dramatically maintain clicks-and-mortar solutions without
-                      functional solutions.
+                      O Code Hub acredita firmemente no poder do acesso gratuito
+                      ao ensino de programação e tecnologia. Nosso objetivo é
+                      proporcionar uma plataforma aberta e inclusiva, onde
+                      qualquer pessoa interessada em aprender possa fazê-lo,
+                      independentemente de sua origem ou recursos financeiros.
                     </p>
                   </TabPane>
                 </TabContent>
               </CardBody>
             </Card>
           </Col>
-
         </Row>
       </Container>
     </div>

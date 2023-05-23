@@ -51,15 +51,14 @@ export default function Index() {
         <div className="main">
         <Tabs />
         <Signup />
-
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <JavaScript />
-          <NucleoIcons />
+        <NucleoIcons />
 
           <Examples />
-          <Download />
+
+
+          <JavaScript />
+
+
         </div>
         <Footer />
       </div>

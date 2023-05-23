@@ -35,7 +35,7 @@ import {
   Col,
   UncontrolledTooltip
 } from "reactstrap";
-
+import logo from "../../assets/img/logocode4.png"; // Substitua pelo caminho correto para o seu logotipo
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
@@ -79,11 +79,12 @@ export default function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
+          <img src={logo} alt="Code•Hub Logo" className="mr-1" />
             <span>Code•</span>
             Hub
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
+CodeHub
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
