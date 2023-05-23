@@ -27,22 +27,13 @@ import {
   CardFooter,
   CardImg,
   CardTitle,
-  Label,
-  FormGroup,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  Badge,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 export default function Signup() {
-  const [fullNameFocus, setFullNameFocus] = React.useState(false);
-  const [emailFocus, setEmailFocus] = React.useState(false);
-  const [passwordFocus, setPasswordFocus] = React.useState(false);
   return (
     <div className="section section-signup">
       <Container>
@@ -53,15 +44,15 @@ export default function Signup() {
         <Row className="row-grid justify-content-between align-items-center">
           <Col lg="6">
             <h3 className="display-3 text-white">
-              A beautiful Black Design{" "}
-              <span className="text-white">completed with examples</span>
+              Desbrave o futuro da tecnologia{" "}
+              <span className="text-white"></span>
             </h3>
             <p className="text-white mb-3">
-              The Design System comes with four pre-built pages to help you get
-              started faster. You can change the text and images and you're good
-              to go. More importantly, looking at them will give you a picture
-              of what you can built with this powerful Bootstrap 4 Design
-              System.
+              No Code•Hub, acreditamos que a tecnologia está transformando o mundo
+              ao nosso redor, e todos têm o direito de acessar informações
+              atualizadas, cursos de qualidade e recursos educacionais
+              abrangentes. É por isso que criamos esta plataforma para fornecer
+              tudo o que você precisa em um único lugar.
             </p>
             <div className="btn-wrapper">
               <Button color="primary" to="register-page" tag={Link}>
@@ -69,83 +60,141 @@ export default function Signup() {
               </Button>
             </div>
           </Col>
-          <Col className="mb-lg-auto" lg="6">
-            <Card className="card-register">
+          <Col className="mb-lg-auto" lg="5">
+            <Card className="card-register" color="success">
+              <CardHeader>
+                <CardImg alt="..." src={require("assets/img/square1.png")} />
+
+                <CardTitle tag="h4">Guanabara </CardTitle>
+
+                <Col className="mt-5 mt-sm-0" sm="3" xs="6"></Col>
+              </CardHeader>
+
+              <CardBody>
+                <Badge className="badge-default">Tecnologia</Badge>
+
+                <Badge className="badge-default">Educação</Badge>
+                <Badge className="badge-default">Engajamento</Badge>
+                <Badge className="badge-default">
+                  Fundador do Curso em Vídeo
+                </Badge>
+                <Badge className="badge-default">Ensino de Qualidade</Badge>
+              </CardBody>
+
+              <CardFooter>
+                <img
+                  alt="..."
+                  className="img-fluid rounded-circle shadow-lg"
+                  src={require("assets/img/guana1.png")}
+                  style={{ width: "150px" }}
+                />
+                <Button
+                  className="btn-round"
+                  href="/profile-page"
+                  color="info"
+                  size="lg"
+                >
+                  Veja o Perfil
+                </Button>
+              </CardFooter>
+            </Card>
+          </Col>
+          <Col className="mb-lg-auto" lg="5">
+            <Card className="card-register" color="warning">
               <CardHeader>
                 <CardImg
                   alt="..."
-                  src={require("assets/img/square-purple-1.png")}
+                  src={require("assets/img/square2.png")}
                 />
-                <CardTitle tag="h4">Register</CardTitle>
+                <CardTitle tag="h4">Deschamps</CardTitle>
               </CardHeader>
               <CardBody>
-                <Form className="form">
-                  <InputGroup
-                    className={classnames({
-                      "input-group-focus": fullNameFocus
-                    })}
-                  >
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="tim-icons icon-single-02" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      placeholder="Full Name"
-                      type="text"
-                      onFocus={(e) => setFullNameFocus(true)}
-                      onBlur={(e) => setFullNameFocus(false)}
-                    />
-                  </InputGroup>
-                  <InputGroup
-                    className={classnames({
-                      "input-group-focus": emailFocus
-                    })}
-                  >
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="tim-icons icon-email-85" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      placeholder="Email"
-                      type="text"
-                      onFocus={(e) => setEmailFocus(true)}
-                      onBlur={(e) => setEmailFocus(false)}
-                    />
-                  </InputGroup>
-                  <InputGroup
-                    className={classnames({
-                      "input-group-focus": passwordFocus
-                    })}
-                  >
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="tim-icons icon-lock-circle" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      placeholder="Password"
-                      type="text"
-                      onFocus={(e) => setPasswordFocus(true)}
-                      onBlur={(e) => setPasswordFocus(false)}
-                    />
-                  </InputGroup>
-                  <FormGroup check className="text-left">
-                    <Label check>
-                      <Input type="checkbox" />
-                      <span className="form-check-sign" />I agree to the{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        terms and conditions
-                      </a>
-                      .
-                    </Label>
-                  </FormGroup>
-                </Form>
+                <Badge className="badge-default">Tecnologia</Badge>
+                <Badge className="badge-default">Educação</Badge>
+                <Badge className="badge-default">Criatividade</Badge>
+                <Badge className="badge-default">Fundador do TabNews</Badge>
+                <Badge className="badge-default">Saúde Mental</Badge>
               </CardBody>
               <CardFooter>
-                <Button className="btn-round" color="primary" size="lg">
-                  Get Started
+                <img
+                  alt="..."
+                  className="img-fluid rounded-circle shadow-lg"
+                  src={require("assets/img/felipe1.jpg")}
+                  style={{ width: "150px" }}
+                />
+                <Button
+                  className="btn-round"
+                  href="/profile-page2"
+                  color="info"
+                  size="lg"
+                >
+                  Veja o Perfil
+                </Button>
+              </CardFooter>
+            </Card>
+          </Col>
+          <Col className="mb-lg-auto" lg="5">
+            <Card className="card-register" color="primary">
+              <CardHeader>
+                <CardImg alt="..." src={require("assets/img/square5.png")} />
+                <CardTitle tag="h4">Loiane</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <Badge className="badge-default">Tecnologia</Badge>
+                <Badge className="badge-default">Educação</Badge>
+                <Badge className="badge-default">Engajamento</Badge>
+                <Badge className="badge-default">
+                  Fundador do Curso em Vídeo
+                </Badge>
+                <Badge className="badge-default">Ensino de Qualidade</Badge>
+              </CardBody>
+              <CardFooter>
+                <img
+                  alt="..."
+                  className="img-fluid rounded-circle shadow-lg"
+                  src={require("assets/img/loiane1.jpg")}
+                  style={{ width: "150px" }}
+                />
+                <Button
+                  className="btn-round"
+                  href="/profile-page3"
+                  color="info"
+                  size="lg"
+                >
+                  Veja o Perfil
+                </Button>
+              </CardFooter>
+            </Card>
+          </Col>
+          <Col className="mb-lg-auto" lg="5">
+            <Card className="card-register" color="danger">
+              <CardHeader>
+                <CardImg alt="..." src={require("assets/img/square6.png")} />
+                <CardTitle tag="h4">Attekita</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <Badge className="badge-default">Tecnologia</Badge>
+                <Badge className="badge-default">Educação</Badge>
+                <Badge className="badge-default">Engajamento</Badge>
+                <Badge className="badge-default">
+                  Fundador do Curso em Vídeo
+                </Badge>
+                <Badge className="badge-default">Ensino de Qualidade</Badge>
+              </CardBody>
+              <CardFooter>
+                <img
+                  alt="..."
+                  className="img-fluid rounded-circle shadow-lg"
+                  src={require("assets/img/atekita1.jpg")}
+                  style={{ width: "150px" }}
+                />
+                <Button
+                  className="btn-round"
+                  href="/profile-page3"
+                  color="info"
+                  size="lg"
+                >
+                  Veja o Perfil
                 </Button>
               </CardFooter>
             </Card>

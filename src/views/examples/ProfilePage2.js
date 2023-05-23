@@ -50,19 +50,19 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 
 const carouselItems = [
   {
-    src: require("assets/img/guana1.png"),
+    src: require("assets/img/filipe3.jpg"),
     altText: "Slide 1",
-    caption: "Big City Life, United States",
+    caption: "Vídeo sobre aprendizagem",
   },
   {
-    src: require("assets/img/guanacurso2.jpeg"),
+    src: require("assets/img/filipe4.jpg"),
     altText: "Slide 2",
-    caption: "Somewhere Beyond, United States",
+    caption: "Iniciantes na Programação",
   },
   {
-    src: require("assets/img/guanacurso3.png"),
+    src: require("assets/img/filipe5.jpg"),
     altText: "Slide 3",
-    caption: "Stocks, United States",
+    caption: "Filipe Deschamps em seu canal",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function ProfilePage2() {
         ps = new PerfectScrollbar(tables[i]);
       }
     }
-    document.body.classList.toggle("profile-page2");
+    document.body.classList.toggle("profile-page");
     // Specify how to clean up after this effect:
     return function cleanup() {
       if (navigator.platform.indexOf("Win") > -1) {
@@ -87,7 +87,7 @@ export default function ProfilePage2() {
         document.documentElement.className += " perfect-scrollbar-off";
         document.documentElement.classList.remove("perfect-scrollbar-on");
       }
-      document.body.classList.toggle("profile-page2");
+      document.body.classList.toggle("profile-page");
     };
   }, []);
   return (
@@ -108,26 +108,26 @@ export default function ProfilePage2() {
           <Container className="align-items-center">
             <Row>
               <Col lg="6" md="6">
-                <h1 className="profile-title text-left">Gustavo Guanabara</h1>
+                <h1 className="profile-title text-left">Filipe Deschamps</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  Gustavo Guanabara é professor carioca desde 1994 e já atuou em
-                  todo tipo de segmento. Atuou desde ensino infantil, passando
-                  por cursos técnicos, universidades e já coordenou o setor de
-                  tutoria para ensino à distância de uma universidade pública.
-                  Atualmente, viaja pelo Brasil dando palestras em eventos
-                  nacionais e internacionais, como Campus Party, FISL,
-                  Latinoware, etc.
+                  Filipe Deschamps é um renomado desenvolvedor de software,
+                  instrutor e influenciador no campo da tecnologia. Ele é
+                  conhecido por compartilhar seu conhecimento através de vídeos
+                  educativos em seu canal do YouTube, onde aborda uma ampla
+                  variedade de tópicos relacionados à programação,
+                  desenvolvimento web, inteligência artificial e
+                  empreendedorismo.
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
                     className="btn-icon btn-round"
                     color="twitter"
-                    href="https://twitter.com/creativetim"
+                    href="https://github.com/filipedeschamps"
                     id="tooltip639225725"
                     target="_blank"
                   >
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-github" />
                   </Button>
                   <UncontrolledTooltip delay={0} target="tooltip639225725">
                     Follow us
@@ -135,7 +135,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-icon btn-round"
                     color="facebook"
-                    href="https://www.facebook.com/creativetim"
+                    href="https://www.facebook.com/filipedeschamps/?locale=pt_BR"
                     id="tooltip982846143"
                     target="_blank"
                   >
@@ -147,11 +147,11 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-icon btn-round"
                     color="dribbble"
-                    href="https://dribbble.com/creativetim"
+                    href="https://www.instagram.com/filipedeschamps/"
                     id="tooltip951161185"
                     target="_blank"
                   >
-                    <i className="fab fa-dribbble" />
+                    <i className="fab fa-instagram" />
                   </Button>
                   <UncontrolledTooltip delay={0} target="tooltip951161185">
                     Follow us
@@ -164,9 +164,9 @@ export default function ProfilePage2() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/guana2.jpg")}
+                      src={require("assets/img/felipe1.jpg")}
                     />
-                    <h4 className="title">Alguns números</h4>
+                    <h4 className="title">Dados </h4>
                   </CardHeader>
                   <CardBody>
                     <Nav
@@ -184,35 +184,7 @@ export default function ProfilePage2() {
                           }}
                           href="#pablo"
                         >
-                          Alunos
-                        </NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink
-                          className={classnames({
-                            active: tabs === 2,
-                          })}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setTabs(2);
-                          }}
-                          href="#pablo"
-                        >
-                          Send
-                        </NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink
-                          className={classnames({
-                            active: tabs === 3,
-                          })}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setTabs(3);
-                          }}
-                          href="#pablo"
-                        >
-                          News
+                          Youtube
                         </NavLink>
                       </NavItem>
                     </Nav>
@@ -224,27 +196,17 @@ export default function ProfilePage2() {
                         <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
-                              <th className="header">COIN</th>
-                              <th className="header">AMOUNT</th>
-                              <th className="header">VALUE</th>
+                              <th className="header">Subscritores</th>
+                              <th className="header">Vídeos</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>BTC</td>
-                              <td>7.342</td>
-                              <td>48,870.75 USD</td>
+                              <td>740k+</td>
+                              <td>420+</td>
                             </tr>
-                            <tr>
-                              <td>ETH</td>
-                              <td>30.737</td>
-                              <td>64,53.30 USD</td>
-                            </tr>
-                            <tr>
-                              <td>XRP</td>
-                              <td>19.242</td>
-                              <td>18,354.96 USD</td>
-                            </tr>
+                            <tr></tr>
+                            <tr></tr>
                           </tbody>
                         </Table>
                       </TabPane>
@@ -318,38 +280,32 @@ export default function ProfilePage2() {
                 <h1 className="profile-title text-left">Projetos</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  Lançado em 2013, o projeto de ensinar tecnologia à distância
-                  foi ganhando forma e hoje já conta com milhares de alunos
-                  inscritos e uma grande quantidade de material gratuito. O
-                  professor carioca Gustavo Guanabara sempre buscou criar aulas
-                  diferentes dentro da sua sala. Quando descobriu que poderia
-                  dar aulas para milhares de pessoas pela internet, criou seu
-                  primeiro curso de PHP em 2005. Desde aquela época, já teve
-                  mais de 8 milhões de downloads e colaborou para a formação de
-                  muitos programadores iniciantes. Em 2013, com o apoio
-                  principal da Hostnet, Guanabara iniciou seu projeto mais
-                  ambicioso: ensinar tecnologia através de um site que
-                  disponibilizasse cursos completos em vídeo, com novas aulas
-                  lançadas semanalmente. Ainda em 2013, foi lançado o Curso em
-                  Vídeo de HTML5 e no início de 2014, iniciou o Curso em Vídeo
-                  de Algoritmo. Ambos 100% gratuitos.
+                  Além de seu canal no YouTube, Filipe Deschamps também realiza
+                  palestras e workshops em eventos de tecnologia, contribuindo
+                  para a formação de novos profissionais e compartilhando
+                  insights valiosos sobre as tendências e inovações no campo da
+                  programação. Seu trabalho e experiência demonstram seu
+                  compromisso em promover a disseminação do conhecimento na área
+                  de tecnologia e ajudar os aspirantes a desenvolvedores a
+                  aprimorar suas habilidades e alcançar seus objetivos
+                  profissionais.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
                     className="btn-simple"
                     color="primary"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="https://www.youtube.com/@FilipeDeschamps/videos"
+                    target="_blank"
                   >
-                    <i className="tim-icons icon-book-bookmark" /> Bookmark
+                    <i className="tim-icons icon-triangle-right-17" /> Youtube
                   </Button>
                   <Button
                     className="btn-simple"
                     color="info"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="https://www.tabnews.com.br/"
+                    target="_blank"
                   >
-                    <i className="tim-icons icon-bulb-63" /> Check it!
+                    <i className="tim-icons icon-spaceship" /> Site
                   </Button>
                 </div>
               </Col>
@@ -362,91 +318,105 @@ export default function ProfilePage2() {
               <Col md="6">
                 <Card className="card-plain">
                   <CardHeader>
-                    <h1 className="profile-title text-left">Contact</h1>
+                    <h1 className="profile-title text-left">Conteúdo</h1>
                     <h5 className="text-on-back">03</h5>
                   </CardHeader>
+
                   <CardBody>
-                    <Form>
-                      <Row>
-                        <Col md="6">
-                          <FormGroup>
-                            <label>Your Name</label>
-                            <Input defaultValue="Mike" type="text" />
-                          </FormGroup>
-                        </Col>
-                        <Col md="6">
-                          <FormGroup>
-                            <label>Email address</label>
-                            <Input placeholder="mike@email.com" type="email" />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col md="6">
-                          <FormGroup>
-                            <label>Phone</label>
-                            <Input defaultValue="001-12321345" type="text" />
-                          </FormGroup>
-                        </Col>
-                        <Col md="6">
-                          <FormGroup>
-                            <label>Company</label>
-                            <Input defaultValue="CreativeTim" type="text" />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col md="12">
-                          <FormGroup>
-                            <label>Message</label>
-                            <Input placeholder="Hello there!" type="text" />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Button
-                        className="btn-round float-right"
-                        color="primary"
-                        data-placement="right"
-                        id="tooltip341148792"
-                        type="button"
-                      >
-                        Send text
-                      </Button>
-                      <UncontrolledTooltip
-                        delay={0}
-                        placement="right"
-                        target="tooltip341148792"
-                      >
-                        Can't wait for your message
-                      </UncontrolledTooltip>
-                    </Form>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/elIl48sZ3rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </CardBody>
+                  <CardBody>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dZJbORri0ro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </CardBody>
+                  <CardBody>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Gojqw9BQ5qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                   </CardBody>
                 </Card>
               </Col>
+
               <Col className="ml-auto" md="4">
                 <div className="info info-horizontal">
                   <div className="icon icon-primary">
-                    <i className="tim-icons icon-square-pin" />
+                    <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Find us at the office</h4>
+                    <h4 className="info-title">Dicas de Cursos</h4>
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br />
-                      7652 Bucharest, <br />
-                      Romania
+                      Harvard Online <br />
+                      Sobre programação
+                      <br />
+                      <br />
+
                     </p>
                   </div>
                 </div>
                 <div className="info info-horizontal">
                   <div className="icon icon-primary">
-                    <i className="tim-icons icon-mobile" />
+                    <i className="tim-icons icon-money-coins" />
+                  </div>
+
+                  <div className="description">
+                    <h4 className="info-title">Gratuito</h4>
+                    <p>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-primary">
+                    <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Give us a ring</h4>
+                    <h4 className="info-title">Saúde Mental</h4>
                     <p>
-                      Michael Jordan <br />
-                      +40 762 321 762 <br />
-                      Mon - Fri, 8:00-22:00
+                      Relação entre tecnologia <br />
+                      e vida
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-primary">
+                    <i className="tim-icons icon-money-coins" />
+                  </div>
+
+                  <div className="description">
+                    <h4 className="info-title">Gratuito</h4>
+                    <p>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-primary">
+                    <i className="tim-icons icon-paper" />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Aprendizagem</h4>
+                    <p>
+                      Formas alternativas e extremamente didáticas de aprender linguagens de programação <br />
+
+                      <br />
+
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-primary">
+                    <i className="tim-icons icon-money-coins" />
+                  </div>
+
+                  <div className="description">
+                    <h4 className="info-title">Gratuito</h4>
+                    <p>
+                      <br />
+                      <br />
                     </p>
                   </div>
                 </div>

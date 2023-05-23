@@ -52,17 +52,17 @@ const carouselItems = [
   {
     src: require("assets/img/guanacurso1.jpg"),
     altText: "Slide 1",
-    caption: "Big City Life, United States",
+    caption: "Gustavo Guanabara e curso de Java",
   },
   {
     src: require("assets/img/guanacurso2.jpeg"),
     altText: "Slide 2",
-    caption: "Somewhere Beyond, United States",
+    caption: "Curso completo de HTML5 E CSS3",
   },
   {
     src: require("assets/img/guanacurso3.png"),
     altText: "Slide 3",
-    caption: "Stocks, United States",
+    caption: "Guanabara no estúdio do Curso em Video",
   },
 ];
 
@@ -123,11 +123,11 @@ export default function ProfilePage() {
                   <Button
                     className="btn-icon btn-round"
                     color="twitter"
-                    href="https://twitter.com/creativetim"
+                    href="https://github.com/gustavoguanabara"
                     id="tooltip639225725"
                     target="_blank"
                   >
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-github" />
                   </Button>
                   <UncontrolledTooltip delay={0} target="tooltip639225725">
                     Follow us
@@ -135,7 +135,7 @@ export default function ProfilePage() {
                   <Button
                     className="btn-icon btn-round"
                     color="facebook"
-                    href="https://www.facebook.com/creativetim"
+                    href="https://www.facebook.com/gustavoguanabara/?locale=pt_BR"
                     id="tooltip982846143"
                     target="_blank"
                   >
@@ -147,11 +147,11 @@ export default function ProfilePage() {
                   <Button
                     className="btn-icon btn-round"
                     color="dribbble"
-                    href="https://dribbble.com/creativetim"
+                    href="https://www.instagram.com/gustavoguanabara/"
                     id="tooltip951161185"
                     target="_blank"
                   >
-                    <i className="fab fa-dribbble" />
+                    <i className="fab fa-instagram" />
                   </Button>
                   <UncontrolledTooltip delay={0} target="tooltip951161185">
                     Follow us
@@ -166,7 +166,7 @@ export default function ProfilePage() {
                       className="img-center img-fluid rounded-circle"
                       src={require("assets/img/guana2.jpg")}
                     />
-                    <h4 className="title">Alguns números</h4>
+                    <h4 className="title">Dados </h4>
                   </CardHeader>
                   <CardBody>
                     <Nav
@@ -184,35 +184,7 @@ export default function ProfilePage() {
                           }}
                           href="#pablo"
                         >
-                          Alunos
-                        </NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink
-                          className={classnames({
-                            active: tabs === 2,
-                          })}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setTabs(2);
-                          }}
-                          href="#pablo"
-                        >
-                          Send
-                        </NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink
-                          className={classnames({
-                            active: tabs === 3,
-                          })}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setTabs(3);
-                          }}
-                          href="#pablo"
-                        >
-                          News
+                          Youtube
                         </NavLink>
                       </NavItem>
                     </Nav>
@@ -224,27 +196,17 @@ export default function ProfilePage() {
                         <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
-                              <th className="header">COIN</th>
-                              <th className="header">AMOUNT</th>
-                              <th className="header">VALUE</th>
+                              <th className="header">Subscritores</th>
+                              <th className="header">Vídeos</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>BTC</td>
-                              <td>7.342</td>
-                              <td>48,870.75 USD</td>
+                              <td>2M+</td>
+                              <td>1200+</td>
                             </tr>
-                            <tr>
-                              <td>ETH</td>
-                              <td>30.737</td>
-                              <td>64,53.30 USD</td>
-                            </tr>
-                            <tr>
-                              <td>XRP</td>
-                              <td>19.242</td>
-                              <td>18,354.96 USD</td>
-                            </tr>
+                            <tr></tr>
+                            <tr></tr>
                           </tbody>
                         </Table>
                       </TabPane>
@@ -338,18 +300,18 @@ export default function ProfilePage() {
                   <Button
                     className="btn-simple"
                     color="primary"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ"
+                    target="_blank"
                   >
-                    <i className="tim-icons icon-book-bookmark" /> Bookmark
+                    <i className="tim-icons icon-triangle-right-17" /> Youtube
                   </Button>
                   <Button
                     className="btn-simple"
                     color="info"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="https://www.cursoemvideo.com/sobre/"
+                    target="_blank"
                   >
-                    <i className="tim-icons icon-bulb-63" /> Check it!
+                    <i className="tim-icons icon-spaceship" /> Site
                   </Button>
                 </div>
               </Col>
@@ -359,25 +321,45 @@ export default function ProfilePage() {
         <section className="section">
           <Container>
             <Row>
-
               <Col md="6">
-
                 <Card className="card-plain">
-
                   <CardHeader>
-
                     <h1 className="profile-title text-left">Conteúdo</h1>
                     <h5 className="text-on-back">03</h5>
                   </CardHeader>
 
                   <CardBody>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/Ejkb_YpuHWs"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
                   </CardBody>
                   <CardBody>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/TfsO0BGvGn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/TfsO0BGvGn0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
                   </CardBody>
                   <CardBody>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BXqUH86F-kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/BXqUH86F-kA"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
                   </CardBody>
                 </Card>
               </Col>
@@ -390,11 +372,10 @@ export default function ProfilePage() {
                   <div className="description">
                     <h4 className="info-title">HTML5 e CSS3</h4>
                     <p>
-                     Curso Completo e Atual <br />
-                     Módulo 1 de 5
-                       <br />
-                       41 Videos
-
+                      Curso Completo e Atual <br />
+                      Módulo 1 de 5
+                      <br />
+                      41 Videos
                     </p>
                   </div>
                 </div>
@@ -407,10 +388,9 @@ export default function ProfilePage() {
                     <h4 className="info-title">Gratuito</h4>
                     <p>
                       <br />
-                       <br />
-                       <br />
-                       <br />
-
+                      <br />
+                      <br />
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -421,10 +401,9 @@ export default function ProfilePage() {
                   <div className="description">
                     <h4 className="info-title">PHP</h4>
                     <p>
-                    Curso Completo e Atual <br />
-                    41 Videos
-                       <br />
-
+                      Curso Completo e Atual <br />
+                      41 Videos
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -436,11 +415,10 @@ export default function ProfilePage() {
                   <div className="description">
                     <h4 className="info-title">Gratuito</h4>
                     <p>
-                     <br />
-                       <br />
-                       <br />
-                       <br />
-
+                      <br />
+                      <br />
+                      <br />
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -451,11 +429,10 @@ export default function ProfilePage() {
                   <div className="description">
                     <h4 className="info-title">JavaScript</h4>
                     <p>
-                    Curso Completo e Atual <br />
-                    17 Aulas
-                       <br />
-                       33 Videos
-
+                      Curso Completo e Atual <br />
+                      17 Aulas
+                      <br />
+                      33 Videos
                     </p>
                   </div>
                 </div>
@@ -467,16 +444,13 @@ export default function ProfilePage() {
                   <div className="description">
                     <h4 className="info-title">Gratuito</h4>
                     <p>
-                       <br />
-                       <br />
-
+                      <br />
+                      <br />
                     </p>
                   </div>
                 </div>
               </Col>
-
             </Row>
-
           </Container>
         </section>
         <Footer />
