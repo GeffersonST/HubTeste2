@@ -11,72 +11,69 @@ export default function Examples() {
         <Row>
           <Col sm="6">
             <h1 style={{ marginTop: "20px" }}>Rocketseat</h1>
-            <Link to="platform-page">
+            <a href="/platform-page">
               <img
                 alt="..."
                 className="img-raised"
                 src={require("assets/img/rocketimage1.png")}
               />
-            </Link>
+            </a>
             <Button
               className="btn-simple btn-round"
               color="primary"
-              to="platform-page"
-              tag={Link}
+              href="/platform-page"
             >
               Veja a Plataforma
             </Button>
           </Col>
           <Col sm="6">
             <h1 style={{ marginTop: "20px" }}>Digital Innovation One</h1>
-            <Link to="platform-page">
+            <a href="/platform-page">
               <img
                 alt="..."
                 className="img-raised"
                 src={require("assets/img/dioimage1.png")}
               />
-            </Link>
+            </a>
             <Button
               className="btn-simple btn-round"
               color="primary"
-              to="platform-page"
-              tag={Link}
+              href="/platform-page"
             >
               Veja a Plataforma
             </Button>
           </Col>
           <Col sm="6">
             <h1 style={{ marginTop: "20px" }}>FreeCodeCamp</h1>
-            <Link to="platform-page">
+            <a href="/platform-page">
               <img
                 alt="..."
                 className="img-raised"
                 src={require("assets/img/freeimage1.png")}
               />
-            </Link>
+            </a>
             <Button
               className="btn-simple btn-round"
               color="primary"
-              to="platform-page"
-              tag={Link}
+              href="/platform-page"
             >
               Veja a Plataforma
             </Button>
           </Col>
           <Col sm="6">
             <h1 style={{ marginTop: "20px" }}>Coursera</h1>
-            <Link to="platform-page">
+            <a href="/platform-page">
               <img
                 alt="..."
                 className="img-raised"
                 src={require("assets/img/courseraimage1.png")}
               />
-            </Link>
+            </a>
             <Button
               className="btn-simple btn-round"
               color="primary"
-              to="platform-page"
-              tag={Link}
+              href="/platform-page"
+
             >
               Veja a Plataforma
             </Button>

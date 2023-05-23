@@ -50,17 +50,17 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 
 const carouselItems = [
   {
-    src: require("assets/img/attekita2.jpg"),
+    src: require("assets/img/rocketimage3.png"),
     altText: "Slide 1",
     caption: "Loiane palestrando",
   },
   {
-    src: require("assets/img/attekita3.jpg"),
+    src: require("assets/img/rocketimage6.jpg"),
     altText: "Slide 2",
     caption: "Loiane em evento palestrando",
   },
   {
-    src: require("assets/img/attekita5.jpg"),
+    src: require("assets/img/rocketimage7.png"),
     altText: "Slide 3",
     caption: "Publicações de livros",
   },
@@ -108,24 +108,22 @@ export default function PlatformPage() {
           <Container className="align-items-center">
             <Row>
               <Col lg="6" md="6">
-                <h1 className="profile-title text-left">Karol Attekita</h1>
+                <h1 className="profile-title text-left">Rocketseat</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  Attekita é Engenheira de software especialista em aplicativos
-                  e games, com mais de 12 anos de experiência e 4 prêmios de
-                  reconhecimento nacional junto à Funbites Games Studio. Atuou
-                  por quase 10 anos como freelancer para equipes multinacionais
-                  e possui mais de 20 aplicativos publicados na App Store. Em
-                  2022 esteve na lista dos 50 hackers to follow, foi indicada
-                  para o prêmio internacional "Women that build" e entrou para o
-                  time LinkedIn Creators, sendo uma influenciadora ativa nessa
-                  rede.
+                  Rocketseat é uma renomada plataforma de ensino de programação
+                  que tem como missão principal transformar a forma como as
+                  pessoas aprendem e constroem suas carreiras na área de
+                  tecnologia. Com uma abordagem prática e dinâmica, a Rocketseat
+                  oferece uma ampla variedade de cursos, workshops e trilhas de
+                  aprendizado que abrangem desde conceitos básicos até
+                  tecnologias avançadas.
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
                     className="btn-icon btn-round"
                     color="twitter"
-                    href="https://github.com/Bullas"
+                    href="https://github.com/Rocketseat"
                     id="tooltip639225725"
                     target="_blank"
                   >
@@ -137,7 +135,7 @@ export default function PlatformPage() {
                   <Button
                     className="btn-icon btn-round"
                     color="facebook"
-                    href="https://www.facebook.com/people/Attekita-Dev/100064500320344/"
+                    href="https://www.facebook.com/rocketseat/?locale=pt_BR"
                     id="tooltip982846143"
                     target="_blank"
                   >
@@ -149,7 +147,7 @@ export default function PlatformPage() {
                   <Button
                     className="btn-icon btn-round"
                     color="dribbble"
-                    href="https://www.instagram.com/attekitadev/"
+                    href="https://www.instagram.com/rocketseat/"
                     id="tooltip951161185"
                     target="_blank"
                   >
@@ -166,7 +164,7 @@ export default function PlatformPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/atekita1.jpg")}
+                      src={require("assets/img/rocketseatlogo.png")}
                     />
                     <h4 className="title">Dados </h4>
                   </CardHeader>
@@ -204,8 +202,8 @@ export default function PlatformPage() {
                           </thead>
                           <tbody>
                             <tr>
-                              <td>171k+</td>
-                              <td>289+</td>
+                              <td>328k+</td>
+                              <td>703+</td>
                             </tr>
                             <tr></tr>
                             <tr></tr>
@@ -282,17 +280,24 @@ export default function PlatformPage() {
                 <h1 className="profile-title text-left">Projetos</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  Atualmente atua como Engenheira iOS na Riot Games pela X-team
-                  e compartilha conteúdo no canal Attekita Dev onde impacta em
-                  suas redes sociais mais de 100 mil pessoas. Acredita que
-                  podemos mudar o mundo com o poder da informação! É embaixadora
-                  da Cubos Academy e Backfront Academy
+                  Os cursos da Rocketseat são atualizados constantemente para
+                  refletir as tendências e demandas do mercado de tecnologia,
+                  garantindo que os alunos estejam sempre atualizados com as
+                  habilidades mais relevantes. Além disso, a plataforma oferece
+                  suporte individualizado aos alunos, auxiliando-os em seu
+                  processo de aprendizagem e fornecendo mentoria especializada.
+                  Com a Rocketseat, os alunos têm a oportunidade de desenvolver
+                  habilidades sólidas em programação, conquistar certificações
+                  reconhecidas e impulsionar suas carreiras na área de
+                  tecnologia. Seja você um iniciante ou um profissional em busca
+                  de aprimoramento, a Rocketseat oferece um ambiente completo e
+                  estimulante para o aprendizado e crescimento profissional.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
                     className="btn-simple"
                     color="primary"
-                    href="https://www.youtube.com/@attekitadev"
+                    href="https://www.youtube.com/@rocketseat"
                     target="_blank"
                   >
                     <i className="tim-icons icon-triangle-right-17" /> Youtube
@@ -300,7 +305,7 @@ export default function PlatformPage() {
                   <Button
                     className="btn-simple"
                     color="info"
-                    href="https://beacons.ai/attekitadev"
+                    href="https://www.rocketseat.com.br"
                     target="_blank"
                   >
                     <i className="tim-icons icon-spaceship" /> Site
@@ -321,37 +326,44 @@ export default function PlatformPage() {
                   </CardHeader>
 
                   <CardBody>
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/mtZ_tUPJI0w"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        className="embed-responsive-item"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Znz2QXpJTXQ"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                   <CardBody>
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/4lkOMOt_2ZY"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/rHX4bJsNB7U"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                   <CardBody>
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/X-XfVvd41O8"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/UF7RXzD4hvs"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -365,7 +377,6 @@ export default function PlatformPage() {
                     <h4 className="info-title">Dicas sobre Aprendizagem</h4>
                     <p>
                       Mindset e programação <br />
-
                       <br />
                       <br />
                     </p>
