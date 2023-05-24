@@ -50,25 +50,25 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 
 const carouselItems = [
   {
-    src: require("assets/img/filipe3.jpg"),
+    src: require("assets/img/freeimage2.png"),
     altText: "Slide 1",
-    caption: "Vídeo sobre aprendizagem",
+    caption: "Certificados Gratuitos",
   },
   {
-    src: require("assets/img/filipe4.jpg"),
+    src: require("assets/img/freeimage3.jpg"),
     altText: "Slide 2",
-    caption: "Iniciantes na Programação",
+    caption: "Desenvolvimento Full Stack com ChatGPT",
   },
   {
-    src: require("assets/img/filipe5.jpg"),
+    src: require("assets/img/freeimage4.jpg"),
     altText: "Slide 3",
-    caption: "Filipe Deschamps em seu canal",
+    caption: "July 2021 Summit",
   },
 ];
 
 let ps = null;
 
-export default function ProfilePage2() {
+export default function PlatformPage3() {
   const [tabs, setTabs] = React.useState(1);
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
@@ -108,22 +108,27 @@ export default function ProfilePage2() {
           <Container className="align-items-center">
             <Row>
               <Col lg="6" md="6">
-                <h1 className="profile-title text-left">Filipe Deschamps</h1>
+                <h1 className="profile-title text-left">FreeCodeCamp</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  Filipe Deschamps é um renomado desenvolvedor de software,
-                  instrutor e influenciador no campo da tecnologia. Ele é
-                  conhecido por compartilhar seu conhecimento através de vídeos
-                  educativos em seu canal do YouTube, onde aborda uma ampla
-                  variedade de tópicos relacionados à programação,
-                  desenvolvimento web, inteligência artificial e
-                  empreendedorismo.
+                  O FreeCodeCamp é uma plataforma de tecnologia inovadora que
+                  está revolucionando a forma como as pessoas aprendem
+                  programação e desenvolvimento web. Com uma abordagem única e
+                  acessível, o FreeCodeCamp oferece um currículo completo e
+                  gratuito, que capacita milhões de pessoas ao redor do mundo a
+                  adquirirem habilidades técnicas valiosas. A missão do
+                  FreeCodeCamp é clara: tornar a educação em programação
+                  acessível a todos, independentemente de sua formação acadêmica
+                  ou condição financeira. A plataforma se baseia em uma
+                  comunidade colaborativa, onde os usuários podem aprender,
+                  praticar e ajudar uns aos outros em seu caminho para se
+                  tornarem desenvolvedores competentes.
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
                     className="btn-icon btn-round"
                     color="twitter"
-                    href="https://github.com/filipedeschamps"
+                    href="https://github.com/freeCodeCamp"
                     id="tooltip639225725"
                     target="_blank"
                   >
@@ -135,7 +140,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-icon btn-round"
                     color="facebook"
-                    href="https://www.facebook.com/filipedeschamps/?locale=pt_BR"
+                    href="https://www.facebook.com/freecodecamp/?locale=pt_BR"
                     id="tooltip982846143"
                     target="_blank"
                   >
@@ -147,7 +152,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-icon btn-round"
                     color="dribbble"
-                    href="https://www.instagram.com/filipedeschamps/"
+                    href="https://www.instagram.com/freecodecamp/"
                     id="tooltip951161185"
                     target="_blank"
                   >
@@ -164,7 +169,7 @@ export default function ProfilePage2() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/felipe1.jpg")}
+                      src={require("assets/img/freelogo3.png")}
                     />
                     <h4 className="title">Dados </h4>
                   </CardHeader>
@@ -202,8 +207,8 @@ export default function ProfilePage2() {
                           </thead>
                           <tbody>
                             <tr>
-                              <td>740k+</td>
-                              <td>420+</td>
+                              <td>7,76M+</td>
+                              <td>1,4K+</td>
                             </tr>
                             <tr></tr>
                             <tr></tr>
@@ -280,21 +285,27 @@ export default function ProfilePage2() {
                 <h1 className="profile-title text-left">Projetos</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  Além de seu canal no YouTube, Filipe Deschamps também realiza
-                  palestras e workshops em eventos de tecnologia, contribuindo
-                  para a formação de novos profissionais e compartilhando
-                  insights valiosos sobre as tendências e inovações no campo da
-                  programação. Seu trabalho e experiência demonstram seu
-                  compromisso em promover a disseminação do conhecimento na área
-                  de tecnologia e ajudar os aspirantes a desenvolvedores a
-                  aprimorar suas habilidades e alcançar seus objetivos
-                  profissionais.
+                  Além disso, o FreeCodeCamp valoriza a aprendizagem
+                  autodirigida. Embora haja um currículo sugerido, os usuários
+                  têm a liberdade de personalizar seu próprio caminho de
+                  aprendizagem com base em seus interesses e objetivos. A
+                  plataforma oferece uma ampla variedade de certificações para
+                  recompensar o progresso e a conclusão de cada seção do
+                  currículo, o que pode ser um incentivo adicional para os
+                  alunos. A comunidade do FreeCodeCamp também é um aspecto
+                  fundamental do sucesso da plataforma. Os usuários podem
+                  interagir em fóruns, grupos de estudo locais e eventos
+                  presenciais, compartilhando conhecimentos, buscando orientação
+                  e formando conexões significativas com outros aprendizes e
+                  desenvolvedores experientes. Essa rede de suporte e
+                  colaboração é inestimável para o crescimento profissional e a
+                  construção de uma carreira sólida na área de tecnologia.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
                     className="btn-simple"
                     color="primary"
-                    href="https://www.youtube.com/@FilipeDeschamps/videos"
+                    href="https://www.youtube.com/c/Freecodecamp"
                     target="_blank"
                   >
                     <i className="tim-icons icon-triangle-right-17" /> Youtube
@@ -302,7 +313,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-simple"
                     color="info"
-                    href="https://www.tabnews.com.br/"
+                    href="https://www.freecodecamp.org"
                     target="_blank"
                   >
                     <i className="tim-icons icon-spaceship" /> Site
@@ -323,46 +334,43 @@ export default function ProfilePage2() {
                   </CardHeader>
 
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/elIl48sZ3rA"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/8mAITcNt710"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/dZJbORri0ro"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/zJSY8tbf_ys"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/Gojqw9BQ5qY"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/i_LwzRVP7bg"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -373,10 +381,9 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Dicas de Cursos</h4>
+                    <h4 className="info-title">Harvard CS50</h4>
                     <p>
-                      Harvard Online <br />
-                      Sobre programação
+                      Curso Completo <br />
                       <br />
                       <br />
                     </p>
@@ -402,10 +409,9 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Saúde Mental</h4>
+                    <h4 className="info-title">Frontend Web Developer</h4>
                     <p>
-                      Relação entre tecnologia <br />
-                      e vida
+                      HTML - CSS - JavaScript, Curso Completo <br />
                       <br />
                     </p>
                   </div>
@@ -419,9 +425,6 @@ export default function ProfilePage2() {
                     <h4 className="info-title">Gratuito</h4>
                     <p>
                       <br />
-                      <br />
-                      <br />
-                      <br />
                     </p>
                   </div>
                 </div>
@@ -430,10 +433,10 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Aprendizagem</h4>
+                    <h4 className="info-title">Machine Learning</h4>
                     <p>
-                      Formas alternativas e extremamente didáticas de aprender
-                      linguagens de programação <br />
+                      Curso Completo
+                      <br />
                       <br />
                     </p>
                   </div>

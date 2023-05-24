@@ -50,25 +50,25 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 
 const carouselItems = [
   {
-    src: require("assets/img/filipe3.jpg"),
+    src: require("assets/img/courseraimage2.png"),
     altText: "Slide 1",
-    caption: "Vídeo sobre aprendizagem",
+    caption: "Certificados Gratuitos",
   },
   {
-    src: require("assets/img/filipe4.jpg"),
+    src: require("assets/img/courseraimage6.png"),
     altText: "Slide 2",
-    caption: "Iniciantes na Programação",
+    caption: "Desenvolvimento Full Stack com ChatGPT",
   },
   {
-    src: require("assets/img/filipe5.jpg"),
+    src: require("assets/img/courseraimage4.jpg"),
     altText: "Slide 3",
-    caption: "Filipe Deschamps em seu canal",
+    caption: "July 2021 Summit",
   },
 ];
 
 let ps = null;
 
-export default function ProfilePage2() {
+export default function PlatformPage4() {
   const [tabs, setTabs] = React.useState(1);
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
@@ -108,22 +108,28 @@ export default function ProfilePage2() {
           <Container className="align-items-center">
             <Row>
               <Col lg="6" md="6">
-                <h1 className="profile-title text-left">Filipe Deschamps</h1>
+                <h1 className="profile-title text-left">Coursera</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  Filipe Deschamps é um renomado desenvolvedor de software,
-                  instrutor e influenciador no campo da tecnologia. Ele é
-                  conhecido por compartilhar seu conhecimento através de vídeos
-                  educativos em seu canal do YouTube, onde aborda uma ampla
-                  variedade de tópicos relacionados à programação,
-                  desenvolvimento web, inteligência artificial e
-                  empreendedorismo.
+                  Coursera é uma plataforma de aprendizado online que oferece
+                  uma ampla gama de cursos, programas e especializações em
+                  diversas áreas do conhecimento. Com sede nos Estados Unidos,
+                  foi fundada por professores da Universidade Stanford em 2012 e
+                  rapidamente se tornou uma referência global em educação
+                  online. Uma das principais características da Coursera é sua
+                  parceria com universidades e instituições renomadas de todo o
+                  mundo. Isso garante que os cursos oferecidos sejam
+                  desenvolvidos e ministrados por especialistas altamente
+                  qualificados em suas respectivas áreas. Com essa abordagem, a
+                  plataforma traz a experiência de aprendizado de instituições
+                  de ensino de prestígio diretamente para o conforto do lar dos
+                  alunos.
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
                     className="btn-icon btn-round"
                     color="twitter"
-                    href="https://github.com/filipedeschamps"
+                    href="https://github.com/coursera"
                     id="tooltip639225725"
                     target="_blank"
                   >
@@ -135,7 +141,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-icon btn-round"
                     color="facebook"
-                    href="https://www.facebook.com/filipedeschamps/?locale=pt_BR"
+                    href="https://www.facebook.com/Coursera/?locale=pt_BR"
                     id="tooltip982846143"
                     target="_blank"
                   >
@@ -147,7 +153,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-icon btn-round"
                     color="dribbble"
-                    href="https://www.instagram.com/filipedeschamps/"
+                    href="https://www.instagram.com/coursera/"
                     id="tooltip951161185"
                     target="_blank"
                   >
@@ -164,7 +170,7 @@ export default function ProfilePage2() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/felipe1.jpg")}
+                      src={require("assets/img/courlogo1.png")}
                     />
                     <h4 className="title">Dados </h4>
                   </CardHeader>
@@ -202,8 +208,8 @@ export default function ProfilePage2() {
                           </thead>
                           <tbody>
                             <tr>
-                              <td>740k+</td>
-                              <td>420+</td>
+                              <td>224K+</td>
+                              <td>686+</td>
                             </tr>
                             <tr></tr>
                             <tr></tr>
@@ -280,21 +286,25 @@ export default function ProfilePage2() {
                 <h1 className="profile-title text-left">Projetos</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  Além de seu canal no YouTube, Filipe Deschamps também realiza
-                  palestras e workshops em eventos de tecnologia, contribuindo
-                  para a formação de novos profissionais e compartilhando
-                  insights valiosos sobre as tendências e inovações no campo da
-                  programação. Seu trabalho e experiência demonstram seu
-                  compromisso em promover a disseminação do conhecimento na área
-                  de tecnologia e ajudar os aspirantes a desenvolvedores a
-                  aprimorar suas habilidades e alcançar seus objetivos
-                  profissionais.
+                  A Coursera oferece uma ampla variedade de disciplinas, desde
+                  ciência da computação, negócios e ciências sociais até artes,
+                  humanidades e saúde. Os cursos são projetados para serem
+                  acessíveis e flexíveis, permitindo que os alunos aprendam no
+                  seu próprio ritmo e de acordo com sua disponibilidade de
+                  tempo. Muitos cursos são oferecidos gratuitamente, com a opção
+                  de obter um certificado de conclusão mediante o pagamento de
+                  uma taxa. Além disso, a Coursera também oferece programas e
+                  especializações, que consistem em uma série de cursos
+                  relacionados que fornecem um conhecimento mais aprofundado em
+                  uma área específica. Esses programas são ideais para aqueles
+                  que desejam aprimorar suas habilidades em um campo específico
+                  ou buscar uma nova carreira.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
                     className="btn-simple"
                     color="primary"
-                    href="https://www.youtube.com/@FilipeDeschamps/videos"
+                    href="https://www.youtube.com/@coursera/featured"
                     target="_blank"
                   >
                     <i className="tim-icons icon-triangle-right-17" /> Youtube
@@ -302,7 +312,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-simple"
                     color="info"
-                    href="https://www.tabnews.com.br/"
+                    href="https://www.coursera.org/?irclickid=TacTPhSwXxyNUZhUy4XwpQCFUkASVuR2Z0Jxzk0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=2436725&utm_content=b2c"
                     target="_blank"
                   >
                     <i className="tim-icons icon-spaceship" /> Site
@@ -323,46 +333,43 @@ export default function ProfilePage2() {
                   </CardHeader>
 
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/elIl48sZ3rA"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Pf03RTjeISE"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/dZJbORri0ro"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/wJ8_tV7OiIM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/Gojqw9BQ5qY"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/ZstzwKbHdUA"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -373,10 +380,9 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Dicas de Cursos</h4>
+                    <h4 className="info-title">Coursera Online</h4>
                     <p>
-                      Harvard Online <br />
-                      Sobre programação
+                      Totalmente Online com legenda <br />
                       <br />
                       <br />
                     </p>
@@ -388,7 +394,7 @@ export default function ProfilePage2() {
                   </div>
 
                   <div className="description">
-                    <h4 className="info-title">Gratuito</h4>
+                    <h4 className="info-title">Gratuito e Pago</h4>
                     <p>
                       <br />
                       <br />
@@ -402,10 +408,9 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Saúde Mental</h4>
+                    <h4 className="info-title">Graduações e Certificados</h4>
                     <p>
-                      Relação entre tecnologia <br />
-                      e vida
+                      Possibilidades de Graduações e Pós Graduações <br />
                       <br />
                     </p>
                   </div>
@@ -416,11 +421,8 @@ export default function ProfilePage2() {
                   </div>
 
                   <div className="description">
-                    <h4 className="info-title">Gratuito</h4>
+                    <h4 className="info-title">Gratuito e Pago</h4>
                     <p>
-                      <br />
-                      <br />
-                      <br />
                       <br />
                     </p>
                   </div>
@@ -430,10 +432,10 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Aprendizagem</h4>
+                    <h4 className="info-title"> IBM Data Science</h4>
                     <p>
-                      Formas alternativas e extremamente didáticas de aprender
-                      linguagens de programação <br />
+                      Certificado Profissional
+                      <br />
                       <br />
                     </p>
                   </div>
@@ -444,7 +446,7 @@ export default function ProfilePage2() {
                   </div>
 
                   <div className="description">
-                    <h4 className="info-title">Gratuito</h4>
+                    <h4 className="info-title">Gratuito e Pago</h4>
                     <p>
                       <br />
                       <br />

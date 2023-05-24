@@ -39,7 +39,7 @@ export default function Tabs() {
     <div className="section section-tabs">
       <Container>
         <div className="title">
-          <h3 className="mb-3">O que você encontrará no Code•Hub?</h3>
+          <h3 className="mb-3">O que você encontrará no Jaguar•Code?</h3>
         </div>
         <Row>
           <Col className="ml-auto mr-auto" md="10" xl="6">

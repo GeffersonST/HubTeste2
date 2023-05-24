@@ -50,25 +50,25 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 
 const carouselItems = [
   {
-    src: require("assets/img/filipe3.jpg"),
+    src: require("assets/img/digimage4.jpg"),
     altText: "Slide 1",
-    caption: "Vídeo sobre aprendizagem",
+    caption: "Diogo Fernandes",
   },
   {
-    src: require("assets/img/filipe4.jpg"),
+    src: require("assets/img/digimage5.jpg"),
     altText: "Slide 2",
-    caption: "Iniciantes na Programação",
+    caption: "Mayk Brito e Rodrigo Gonçalvez",
   },
   {
-    src: require("assets/img/filipe5.jpg"),
+    src: require("assets/img/digimage3.jpg"),
     altText: "Slide 3",
-    caption: "Filipe Deschamps em seu canal",
+    caption: "While 2020",
   },
 ];
 
 let ps = null;
 
-export default function ProfilePage2() {
+export default function PlatformPage2() {
   const [tabs, setTabs] = React.useState(1);
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
@@ -108,22 +108,22 @@ export default function ProfilePage2() {
           <Container className="align-items-center">
             <Row>
               <Col lg="6" md="6">
-                <h1 className="profile-title text-left">Filipe Deschamps</h1>
+                <h1 className="profile-title text-left">
+                  Digital Innovation One
+                </h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  Filipe Deschamps é um renomado desenvolvedor de software,
-                  instrutor e influenciador no campo da tecnologia. Ele é
-                  conhecido por compartilhar seu conhecimento através de vídeos
-                  educativos em seu canal do YouTube, onde aborda uma ampla
-                  variedade de tópicos relacionados à programação,
-                  desenvolvimento web, inteligência artificial e
-                  empreendedorismo.
+                  A Digital Innovation One (DIO) é uma plataforma revolucionária
+                  que está moldando o cenário da educação em tecnologia. Com uma
+                  proposta inovadora, a DIO oferece aos seus usuários acesso a
+                  uma ampla variedade de cursos online, workshops e eventos
+                  focados em desenvolvimento de habilidades digitais.
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
                     className="btn-icon btn-round"
                     color="twitter"
-                    href="https://github.com/filipedeschamps"
+                    href="https://github.com/digitalinnovationone"
                     id="tooltip639225725"
                     target="_blank"
                   >
@@ -135,7 +135,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-icon btn-round"
                     color="facebook"
-                    href="https://www.facebook.com/filipedeschamps/?locale=pt_BR"
+                    href="https://www.facebook.com/diomakethechange"
                     id="tooltip982846143"
                     target="_blank"
                   >
@@ -147,7 +147,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-icon btn-round"
                     color="dribbble"
-                    href="https://www.instagram.com/filipedeschamps/"
+                    href="https://www.instagram.com/dio_makethechange/"
                     id="tooltip951161185"
                     target="_blank"
                   >
@@ -164,7 +164,7 @@ export default function ProfilePage2() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/felipe1.jpg")}
+                      src={require("assets/img/diologo1.jpg")}
                     />
                     <h4 className="title">Dados </h4>
                   </CardHeader>
@@ -202,8 +202,8 @@ export default function ProfilePage2() {
                           </thead>
                           <tbody>
                             <tr>
-                              <td>740k+</td>
-                              <td>420+</td>
+                              <td>93k+</td>
+                              <td>759+</td>
                             </tr>
                             <tr></tr>
                             <tr></tr>
@@ -280,21 +280,21 @@ export default function ProfilePage2() {
                 <h1 className="profile-title text-left">Projetos</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  Além de seu canal no YouTube, Filipe Deschamps também realiza
-                  palestras e workshops em eventos de tecnologia, contribuindo
-                  para a formação de novos profissionais e compartilhando
-                  insights valiosos sobre as tendências e inovações no campo da
-                  programação. Seu trabalho e experiência demonstram seu
-                  compromisso em promover a disseminação do conhecimento na área
-                  de tecnologia e ajudar os aspirantes a desenvolvedores a
-                  aprimorar suas habilidades e alcançar seus objetivos
-                  profissionais.
+                  O diferencial da Digital Innovation One está na qualidade e
+                  diversidade de seus conteúdos. A plataforma trabalha com uma
+                  equipe de especialistas renomados e profissionais experientes
+                  no setor de tecnologia, garantindo que o conhecimento
+                  transmitido seja relevante, atualizado e alinhado com as
+                  tendências mais recentes. Além disso, os cursos são
+                  estruturados de forma didática, com materiais de apoio e
+                  exercícios práticos, permitindo que os alunos coloquem em
+                  prática o que aprendem.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
                     className="btn-simple"
                     color="primary"
-                    href="https://www.youtube.com/@FilipeDeschamps/videos"
+                    href="https://www.youtube.com/@diomakethechange"
                     target="_blank"
                   >
                     <i className="tim-icons icon-triangle-right-17" /> Youtube
@@ -302,7 +302,7 @@ export default function ProfilePage2() {
                   <Button
                     className="btn-simple"
                     color="info"
-                    href="https://www.tabnews.com.br/"
+                    href="https://www.dio.me"
                     target="_blank"
                   >
                     <i className="tim-icons icon-spaceship" /> Site
@@ -323,46 +323,43 @@ export default function ProfilePage2() {
                   </CardHeader>
 
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/elIl48sZ3rA"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/YkZwymWqB5s"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/dZJbORri0ro"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/dJyDEKH1RnE"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                   <CardBody>
-                  <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/Gojqw9BQ5qY"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/jhqVv3cCKnA"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -373,10 +370,9 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Dicas de Cursos</h4>
+                    <h4 className="info-title">Hacking Lisbon Tech</h4>
                     <p>
-                      Harvard Online <br />
-                      Sobre programação
+                      Oportunidades de trabalho no exterior <br />
                       <br />
                       <br />
                     </p>
@@ -388,7 +384,7 @@ export default function ProfilePage2() {
                   </div>
 
                   <div className="description">
-                    <h4 className="info-title">Gratuito</h4>
+                    <h4 className="info-title">Gratuito e Pago</h4>
                     <p>
                       <br />
                       <br />
@@ -402,10 +398,9 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Saúde Mental</h4>
+                    <h4 className="info-title">Formação em Game Developer</h4>
                     <p>
-                      Relação entre tecnologia <br />
-                      e vida
+                      Desenvolvimento no Roblox e Metaverse <br />
                       <br />
                     </p>
                   </div>
@@ -416,11 +411,8 @@ export default function ProfilePage2() {
                   </div>
 
                   <div className="description">
-                    <h4 className="info-title">Gratuito</h4>
+                    <h4 className="info-title">Gratuito e Pago</h4>
                     <p>
-                      <br />
-                      <br />
-                      <br />
                       <br />
                     </p>
                   </div>
@@ -430,10 +422,10 @@ export default function ProfilePage2() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Aprendizagem</h4>
+                    <h4 className="info-title">Formação em Python</h4>
                     <p>
-                      Formas alternativas e extremamente didáticas de aprender
-                      linguagens de programação <br />
+                      Desenvolvimento e formação completa
+                      <br />
                       <br />
                     </p>
                   </div>
@@ -444,7 +436,7 @@ export default function ProfilePage2() {
                   </div>
 
                   <div className="description">
-                    <h4 className="info-title">Gratuito</h4>
+                    <h4 className="info-title">Gratuito e Pago</h4>
                     <p>
                       <br />
                       <br />

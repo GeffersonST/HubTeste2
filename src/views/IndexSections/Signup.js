@@ -15,10 +15,9 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useEffect } from "react";
 import classnames from "classnames";
-import { Link } from "react-router-dom";
-// reactstrap components
+import { Link, useHistory } from "react-router-dom";
 import {
   Button,
   Card,
@@ -34,6 +33,24 @@ import {
 } from "reactstrap";
 
 export default function Signup() {
+  const history = useHistory();
+
+  const handleSurpriseMe = () => {
+    const routes = [
+      "profile-page",
+      "profile-page2",
+      "profile-page3",
+      "profile-page4",
+    ];
+    const randomIndex = Math.floor(Math.random() * routes.length);
+    const selectedRoute = routes[randomIndex];
+    history.push(selectedRoute);
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [history.location.pathname]);
+
   return (
     <div className="section section-signup">
       <Container>
@@ -48,15 +65,15 @@ export default function Signup() {
               <span className="text-white"></span>
             </h3>
             <p className="text-white mb-3">
-              No Code•Hub, acreditamos que a tecnologia está transformando o mundo
-              ao nosso redor, e todos têm o direito de acessar informações
+              No Jaguar•Code, acreditamos que a tecnologia está transformando o
+              mundo ao nosso redor, e todos têm o direito de acessar informações
               atualizadas, cursos de qualidade e recursos educacionais
               abrangentes. É por isso que criamos esta plataforma para fornecer
               tudo o que você precisa em um único lugar.
             </p>
             <div className="btn-wrapper">
-              <Button color="primary" to="register-page" tag={Link}>
-                Register Page
+              <Button color="primary" onClick={handleSurpriseMe}>
+                Surpreenda-me
               </Button>
             </div>
           </Col>
@@ -102,10 +119,7 @@ export default function Signup() {
           <Col className="mb-lg-auto" lg="5">
             <Card className="card-register" color="warning">
               <CardHeader>
-                <CardImg
-                  alt="..."
-                  src={require("assets/img/square2.png")}
-                />
+                <CardImg alt="..." src={require("assets/img/square2.png")} />
                 <CardTitle tag="h4">Deschamps</CardTitle>
               </CardHeader>
               <CardBody>
@@ -143,9 +157,7 @@ export default function Signup() {
                 <Badge className="badge-default">Tecnologia</Badge>
                 <Badge className="badge-default">Educação</Badge>
                 <Badge className="badge-default">Escritora</Badge>
-                <Badge className="badge-default">
-                  Estados Unidos
-                </Badge>
+                <Badge className="badge-default">Estados Unidos</Badge>
                 <Badge className="badge-default">Angular</Badge>
                 <Badge className="badge-default">Palestrante</Badge>
               </CardBody>
@@ -177,9 +189,7 @@ export default function Signup() {
                 <Badge className="badge-default">Tecnologia</Badge>
                 <Badge className="badge-default">Educação</Badge>
                 <Badge className="badge-default">Mobile</Badge>
-                <Badge className="badge-default">
-                  Games
-                </Badge>
+                <Badge className="badge-default">Games</Badge>
                 <Badge className="badge-default">Freelancer</Badge>
                 <Badge className="badge-default">IOS</Badge>
                 <Badge className="badge-default">X-Team</Badge>

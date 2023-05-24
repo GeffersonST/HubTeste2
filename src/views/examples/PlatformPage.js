@@ -52,17 +52,17 @@ const carouselItems = [
   {
     src: require("assets/img/rocketimage3.png"),
     altText: "Slide 1",
-    caption: "Loiane palestrando",
+    caption: "Diogo Fernandes",
   },
   {
     src: require("assets/img/rocketimage6.jpg"),
     altText: "Slide 2",
-    caption: "Loiane em evento palestrando",
+    caption: "Mayk Brito e Rodrigo Gonçalvez",
   },
   {
     src: require("assets/img/rocketimage7.png"),
     altText: "Slide 3",
-    caption: "Publicações de livros",
+    caption: "While 2020",
   },
 ];
 
@@ -374,9 +374,9 @@ export default function PlatformPage() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Dicas sobre Aprendizagem</h4>
+                    <h4 className="info-title">Automatizando tarefas com IA</h4>
                     <p>
-                      Mindset e programação <br />
+                      Inteligência Artificial <br />
                       <br />
                       <br />
                     </p>
@@ -402,9 +402,9 @@ export default function PlatformPage() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Freelancer</h4>
+                    <h4 className="info-title">React Native</h4>
                     <p>
-                      Plataformas para trabalhar <br />
+                      Desenvolvimento Mobile <br />
                       <br />
                     </p>
                   </div>
@@ -417,10 +417,7 @@ export default function PlatformPage() {
                   <div className="description">
                     <h4 className="info-title">Gratuito</h4>
                     <p>
-                      <br />
-                      <br />
-                      <br />
-                      <br />
+<br />
                     </p>
                   </div>
                 </div>
@@ -429,9 +426,9 @@ export default function PlatformPage() {
                     <i className="tim-icons icon-paper" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Mobile</h4>
+                    <h4 className="info-title">Soft Skills</h4>
                     <p>
-                      Desenvolvimento Mobile para iniciantes <br />
+                      Desenvolvimento pessoal e profissional para iniciantes <br />
                       <br />
                     </p>
                   </div>

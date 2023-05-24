@@ -320,7 +320,8 @@ export default function ProfilePage3() {
                   </CardHeader>
 
                   <CardBody>
-                    <iframe
+                  <div className="embed-responsive embed-responsive-16by9">
+                  <iframe
                       width="560"
                       height="315"
                       src="https://www.youtube.com/embed/qJnjz8FIs6Q"
@@ -329,9 +330,12 @@ export default function ProfilePage3() {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
                     ></iframe>
+                  </div>
+
                   </CardBody>
                   <CardBody>
-                    <iframe
+                  <div className="embed-responsive embed-responsive-16by9">
+                  <iframe
                       width="560"
                       height="315"
                       src="https://www.youtube.com/embed/LnORjqZUMIQ"
@@ -340,9 +344,12 @@ export default function ProfilePage3() {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
                     ></iframe>
+                  </div>
+
                   </CardBody>
                   <CardBody>
-                    <iframe
+                  <div className="embed-responsive embed-responsive-16by9">
+                  <iframe
                       width="560"
                       height="315"
                       src="https://www.youtube.com/embed/B6gJARLZzhc"
@@ -351,6 +358,8 @@ export default function ProfilePage3() {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
                     ></iframe>
+                  </div>
+
                   </CardBody>
                 </Card>
               </Col>

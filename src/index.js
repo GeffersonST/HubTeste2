@@ -31,6 +31,9 @@ import ProfilePage2 from 'views/examples/ProfilePage2';
 import ProfilePage3 from 'views/examples/ProfilePage3';
 import ProfilePage4 from 'views/examples/ProfilePage4';
 import PlatformPage from 'views/examples/PlatformPage';
+import PlatformPage2 from 'views/examples/PlatformPage2';
+import PlatformPage3 from 'views/examples/PlatformPage3';
+import PlatformPage4 from 'views/examples/PlatformPage4';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -65,6 +68,18 @@ root.render(
       <Route
         path="/platform-page"
         render={(props) => <PlatformPage {...props} />}
+      />
+      <Route
+        path="/platform-page2"
+        render={(props) => <PlatformPage2 {...props} />}
+      />
+      <Route
+        path="/platform-page3"
+        render={(props) => <PlatformPage3 {...props} />}
+      />
+      <Route
+        path="/platform-page4"
+        render={(props) => <PlatformPage4 {...props} />}
       />
       <Redirect from="/" to="/components" />
     </Switch>

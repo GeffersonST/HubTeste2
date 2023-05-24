@@ -27,8 +27,8 @@ export default function Examples() {
             </Button>
           </Col>
           <Col sm="6">
-            <h1 style={{ marginTop: "20px" }}>Digital Innovation One</h1>
-            <a href="/platform-page">
+            <h1 style={{ marginTop: "20px" }}>DIO</h1>
+            <a href="/platform-page2">
               <img
                 alt="..."
                 className="img-raised"
@@ -38,14 +38,14 @@ export default function Examples() {
             <Button
               className="btn-simple btn-round"
               color="primary"
-              href="/platform-page"
+              href="/platform-page2"
             >
               Veja a Plataforma
             </Button>
           </Col>
           <Col sm="6">
             <h1 style={{ marginTop: "20px" }}>FreeCodeCamp</h1>
-            <a href="/platform-page">
+            <a href="/platform-page3">
               <img
                 alt="..."
                 className="img-raised"
@@ -55,14 +55,14 @@ export default function Examples() {
             <Button
               className="btn-simple btn-round"
               color="primary"
-              href="/platform-page"
+              href="/platform-page3"
             >
               Veja a Plataforma
             </Button>
           </Col>
           <Col sm="6">
             <h1 style={{ marginTop: "20px" }}>Coursera</h1>
-            <a href="/platform-page">
+            <a href="/platform-page4">
               <img
                 alt="..."
                 className="img-raised"
@@ -72,7 +72,7 @@ export default function Examples() {
             <Button
               className="btn-simple btn-round"
               color="primary"
-              href="/platform-page"
+              href="/platform-page4"
 
             >
               Veja a Plataforma

@@ -32,7 +32,7 @@ export default function PageHeader() {
       <div className="squares square7" />
       <Container>
         <div className="content-center brand">
-          <h1 className="h1-seo">Code•Hub</h1>
+          <h1 className="h1-seo">Jaguar•Code</h1>
           <h3 className="d-none d-sm-block">
           Seu hub completo de aprendizado e inovação.
           </h3>

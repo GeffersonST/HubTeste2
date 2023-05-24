@@ -29,14 +29,16 @@ import {
   Navbar,
   NavItem,
   NavLink,
+  Modal,
   Nav,
   Container,
   Row,
   Col,
-  UncontrolledTooltip
+  UncontrolledTooltip,
 } from "reactstrap";
 import logo from "../../assets/img/logocode4.png"; // Substitua pelo caminho correto para o seu logotipo
 export default function IndexNavbar() {
+  const [demoModal, setDemoModal] = React.useState(false);
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
   const [color, setColor] = React.useState("navbar-transparent");
@@ -79,12 +81,12 @@ export default function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-          <img src={logo} alt="Code•Hub Logo" className="mr-1" />
-            <span>Code•</span>
-            Hub
+            <img src={logo} alt="Jaguar•Code Logo" className="mr-1" />
+            <span>Jaguar•</span>
+            Code
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-CodeHub
+          Jaguar•Code
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
@@ -107,7 +109,7 @@ CodeHub
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Code•Hub
+                  Jaguar•Code
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -171,7 +173,6 @@ CodeHub
                 Getting started
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-
                 <DropdownItem tag={Link} to="/register-page">
                   <i className="tim-icons icon-bullet-list-67" />
                   Register Page
@@ -192,13 +193,63 @@ CodeHub
             </UncontrolledDropdown>
 
             <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="default"
-                onClick={scrollToDownload}
+              <button
+                style={{
+                  backgroundColor: "#feb81d",
+                  borderRadius: "8px",
+                  padding: "10px 20px",
+                  color: "#1f232a",
+                  border: "none",
+                  cursor: "pointer",
+                  fontWeight: "bold",
+                  fontSize: "16px",
+                }}
+                onClick={() => setDemoModal(true)}
               >
-                <i className="tim-icons icon-cloud-download-93" /> Download
-              </Button>
+                Compromisso
+              </button>
+
+              {/* Sart Demo Modal */}
+              <Modal isOpen={demoModal} toggle={() => setDemoModal(false)}>
+                <div className="modal-header justify-content-center">
+                  <button className="close" onClick={() => setDemoModal(false)}>
+                    <i className="tim-icons icon-simple-remove" />
+                  </button>
+                  <h4 className="title title-up">Compromisso</h4>
+                </div>
+                <div className="modal-body">
+                  <p>
+                    No Jaguar•Code, valorizamos e respeitamos os direitos autorais e
+                    a propriedade intelectual. Nosso objetivo é fornecer uma
+                    plataforma que sirva como um repositório de conhecimento e
+                    recursos para a comunidade de tecnologia. É importante
+                    ressaltar que o Jaguar•Code não hospeda nem faz o upload de
+                    conteúdo protegido por direitos autorais. Em vez disso,
+                    nosso aplicativo direciona os usuários para cursos,
+                    plataformas de ensino e outras fontes de informação
+                    relevantes. Não armazenamos nem copiamos o conteúdo
+                    originalmente criado por terceiros. Além disso, queremos
+                    deixar claro que o Jaguar•Code nunca será monetizado. Nosso foco
+                    principal é fornecer um ambiente educacional e colaborativo
+                    gratuito para todos os entusiastas de tecnologia. Estamos
+                    comprometidos em manter a integridade e respeitar os
+                    direitos autorais, garantindo que o conteúdo seja exibido
+                    apenas para fins informativos e de aprendizado.
+                  </p>
+                </div>
+                <div className="modal-footer">
+                  <Button color="default" type="button">
+                    Nice Button
+                  </Button>
+                  <Button
+                    color="danger"
+                    type="button"
+                    onClick={() => setDemoModal(false)}
+                  >
+                    Close
+                  </Button>
+                </div>
+              </Modal>
             </NavItem>
           </Nav>
         </Collapse>
