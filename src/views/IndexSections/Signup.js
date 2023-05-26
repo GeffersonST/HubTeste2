@@ -65,7 +65,7 @@ export default function Signup() {
               <span className="text-white"></span>
             </h3>
             <p className="text-white mb-3">
-              No Jaguar•Code, acreditamos que a tecnologia está transformando o
+              No Sloth•Code, acreditamos que a tecnologia está transformando o
               mundo ao nosso redor, e todos têm o direito de acessar informações
               atualizadas, cursos de qualidade e recursos educacionais
               abrangentes. É por isso que criamos esta plataforma para fornecer
@@ -204,6 +204,37 @@ export default function Signup() {
                 <Button
                   className="btn-round"
                   href="/profile-page4"
+                  color="info"
+                  size="lg"
+                >
+                  Veja o Perfil
+                </Button>
+              </CardFooter>
+            </Card>
+          </Col>
+          <Col className="mb-lg-auto" lg="5">
+            <Card className="card-register" color="red">
+              <CardHeader>
+                <CardImg alt="..." src={require("assets/img/square4.png")} />
+                <CardTitle tag="h4">Da Hora</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <Badge className="badge-default">Tecnologia</Badge>
+                <Badge className="badge-default">Hacker do Bem</Badge>
+                <Badge className="badge-default">inclusão</Badge>
+                <Badge className="badge-default">Segurança</Badge>
+                <Badge className="badge-default">racismo algoritmico</Badge>
+              </CardBody>
+              <CardFooter>
+                <img
+                  alt="..."
+                  className="img-fluid rounded-circle shadow-lg"
+                  src={require("assets/img/ninalogo2.jpg")}
+                  style={{ width: "150px" }}
+                />
+                <Button
+                  className="btn-round"
+                  href="/profile-page5"
                   color="info"
                   size="lg"
                 >

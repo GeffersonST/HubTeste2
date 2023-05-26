@@ -19,7 +19,7 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
-
+import logo from "../../assets/img/slothlogodefinitive.png";
 export default function PageHeader() {
   return (
     <div className="page-header header-filter">
@@ -32,7 +32,8 @@ export default function PageHeader() {
       <div className="squares square7" />
       <Container>
         <div className="content-center brand">
-          <h1 className="h1-seo">Jaguar•Code</h1>
+        <img src={logo} alt="Sloth•Code Logo" className="mr-1" />
+          <h1 className="h1-seo">Sloth•Code</h1>
           <h3 className="d-none d-sm-block">
           Seu hub completo de aprendizado e inovação.
           </h3>

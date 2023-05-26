@@ -15,7 +15,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useEffect } from "react";
+import { Link, useHistory } from "react-router-dom";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 import imagem1 from "../../assets/img/logorocket.png";
@@ -24,6 +25,23 @@ import imagem3 from "../../assets/img/diologo.png";
 import imagem4 from "../../assets/img/courseralogo.png";
 
 export default function NucleoIcons() {
+  const history = useHistory();
+
+  const handleSurpriseMe = () => {
+    const routes = [
+      "platform-page",
+      "platform-page2",
+      "platform-page3",
+      "platform-page4",
+    ];
+    const randomIndex = Math.floor(Math.random() * routes.length);
+    const selectedRoute = routes[randomIndex];
+    history.push(selectedRoute);
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [history.location.pathname]);
   return (
     <div className="section section-nucleo-icons">
       <img alt="..." className="path" src={require("assets/img/path3.png")} />
@@ -32,7 +50,7 @@ export default function NucleoIcons() {
           <Col lg="8" md="12">
             <h1 className="title">Plataformas</h1>
             <h4 className="description">
-              Dentro do Code Hub, você encontrará uma ampla gama de plataformas
+              Dentro do Sloth•Code, você encontrará uma ampla gama de plataformas
               líderes e reconhecidas, cada uma oferecendo conteúdo valioso e
               recursos interativos para apoiar seu aprendizado. Desde cursos
               introdutórios em linguagens de programação populares, como Python,
@@ -41,13 +59,7 @@ export default function NucleoIcons() {
               cibernética.
             </h4>
             <div className="btn-wrapper">
-              <Button
-                className="btn-round"
-                color="primary"
-                href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+            <Button color="primary" onClick={handleSurpriseMe}>
                 Surpreenda-me
               </Button>
 

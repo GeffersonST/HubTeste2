@@ -39,7 +39,7 @@ export default function Tabs() {
     <div className="section section-tabs">
       <Container>
         <div className="title">
-          <h3 className="mb-3">O que você encontrará no Jaguar•Code?</h3>
+          <h3 className="mb-3">O que você encontrará no Sloth•Code?</h3>
         </div>
         <Row>
           <Col className="ml-auto mr-auto" md="10" xl="6">
@@ -92,8 +92,7 @@ export default function Tabs() {
                   <TabPane tabId="link1">
                     <p>
                       Explore a categoria de Perfis de Professores e
-                      Influenciadores na Programação do nosso aplicativo Code
-                      Hub e mergulhe em um mundo de conhecimento e inspiração.
+                      Influenciadores na Programação do nosso aplicativo Sloth•Code e mergulhe em um mundo de conhecimento e inspiração.
                       Aqui você encontrará uma seleção exclusiva de
                       profissionais e influenciadores renomados no campo da
                       programação, prontos para compartilhar seus conhecimentos,
@@ -110,7 +109,7 @@ export default function Tabs() {
                   </TabPane>
                   <TabPane tabId="link3">
                     <p>
-                      O Code Hub acredita firmemente no poder do acesso gratuito
+                      O Sloth•Code acredita firmemente no poder do acesso gratuito
                       ao ensino de programação e tecnologia. Nosso objetivo é
                       proporcionar uma plataforma aberta e inclusiva, onde
                       qualquer pessoa interessada em aprender possa fazê-lo,

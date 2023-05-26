@@ -43,18 +43,33 @@ import {
 
 const carouselItems = [
   {
-    src: require("assets/img/denys.jpg"),
+    src: require("assets/img/slothbig2.png"),
     altText: "Slide 1",
     caption: "",
   },
   {
-    src: require("assets/img/fabien-bazanegue.jpg"),
+    src: require("assets/img/react2.png"),
     altText: "Slide 2",
     caption: "",
   },
   {
-    src: require("assets/img/mark-finn.jpg"),
+    src: require("assets/img/python2.png"),
     altText: "Slide 3",
+    caption: "",
+  },
+  {
+    src: require("assets/img/javascript2.png"),
+    altText: "Slide 4",
+    caption: "",
+  },
+  {
+    src: require("assets/img/csharp1.png"),
+    altText: "Slide 4",
+    caption: "",
+  },
+  {
+    src: require("assets/img/flutter1.png"),
+    altText: "Slide 4",
     caption: "",
   },
 ];
@@ -77,15 +92,15 @@ export default function JavaScript() {
       <div className="section">
         <Container>
           <div className="title">
-            <h3>Carousel</h3>
+
           </div>
           <Row className="justify-content-between align-items-center">
             <Col className="mb-5 mb-lg-0" lg="5">
               <h1 className="text-white font-weight-light">
-                Bootstrap carousel
+                Conhecimento
               </h1>
               <p className="text-white mt-4">
-                No AvaHub, valorizamos o acesso igualitário à educação e nos
+                No Sloth•Code, valorizamos o acesso igualitário à educação e nos
                 esforçamos para promover uma cultura de compartilhamento e
                 crescimento. Junte-se a nós nessa jornada de aprendizado
                 contínuo e empoderamento tecnológico. Juntos, vamos explorar o
@@ -99,12 +114,15 @@ export default function JavaScript() {
                 See all components
               </Button>
             </Col>
-            <Col lg="6">
-              <UncontrolledCarousel
-                items={carouselItems}
-                indicators={false}
-                autoPlay={false}
-              />
+            <Col lg="4">
+            <UncontrolledCarousel
+  items={carouselItems.map((item) => ({
+    ...item,
+    className: 'd-block w-100', // Adicione as classes 'd-block' e 'w-100' para definir a largura e altura das imagens
+  }))}
+  indicators={false}
+  autoPlay={false}
+/>
             </Col>
           </Row>
         </Container>

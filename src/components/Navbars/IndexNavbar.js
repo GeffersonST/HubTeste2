@@ -36,7 +36,7 @@ import {
   Col,
   UncontrolledTooltip,
 } from "reactstrap";
-import logo from "../../assets/img/logocode4.png"; // Substitua pelo caminho correto para o seu logotipo
+import logo from "../../assets/img/slothlogo1.png"; // Substitua pelo caminho correto para o seu logotipo
 export default function IndexNavbar() {
   const [demoModal, setDemoModal] = React.useState(false);
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -81,12 +81,12 @@ export default function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <img src={logo} alt="Jaguar•Code Logo" className="mr-1" />
-            <span>Jaguar•</span>
+
+            <span>Sloth•</span>
             Code
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-          Jaguar•Code
+          Sloth•Code
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
@@ -109,7 +109,7 @@ export default function IndexNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Jaguar•Code
+                  Sloth•Code
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -219,17 +219,17 @@ export default function IndexNavbar() {
                 </div>
                 <div className="modal-body">
                   <p>
-                    No Jaguar•Code, valorizamos e respeitamos os direitos autorais e
+                    No Sloth•Code, valorizamos e respeitamos os direitos autorais e
                     a propriedade intelectual. Nosso objetivo é fornecer uma
                     plataforma que sirva como um repositório de conhecimento e
                     recursos para a comunidade de tecnologia. É importante
-                    ressaltar que o Jaguar•Code não hospeda nem faz o upload de
+                    ressaltar que o Sloth•Code não hospeda nem faz o upload de
                     conteúdo protegido por direitos autorais. Em vez disso,
                     nosso aplicativo direciona os usuários para cursos,
                     plataformas de ensino e outras fontes de informação
                     relevantes. Não armazenamos nem copiamos o conteúdo
                     originalmente criado por terceiros. Além disso, queremos
-                    deixar claro que o Jaguar•Code nunca será monetizado. Nosso foco
+                    deixar claro que o Sloth•Code nunca será monetizado. Nosso foco
                     principal é fornecer um ambiente educacional e colaborativo
                     gratuito para todos os entusiastas de tecnologia. Estamos
                     comprometidos em manter a integridade e respeitar os

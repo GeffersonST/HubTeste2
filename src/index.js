@@ -34,6 +34,7 @@ import PlatformPage from 'views/examples/PlatformPage';
 import PlatformPage2 from 'views/examples/PlatformPage2';
 import PlatformPage3 from 'views/examples/PlatformPage3';
 import PlatformPage4 from 'views/examples/PlatformPage4';
+import ProfilePage5 from 'views/examples/ProfilePage5';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -64,6 +65,10 @@ root.render(
       <Route
         path="/profile-page4"
         render={(props) => <ProfilePage4 {...props} />}
+      />
+      <Route
+        path="/profile-page5"
+        render={(props) => <ProfilePage5 {...props} />}
       />
       <Route
         path="/platform-page"
