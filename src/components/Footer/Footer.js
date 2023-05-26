@@ -17,19 +17,16 @@
 */
 import React from "react";
 import { Link } from "react-router-dom";
-// reactstrap components
-import {
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col,
-  UncontrolledTooltip
-} from "reactstrap";
+import { Button, NavItem, NavLink, Nav, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <footer className="footer">
       <Container>
@@ -69,7 +66,7 @@ export default function Footer() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
+                <NavLink href="/about-page">
                   About Us
                 </NavLink>
               </NavItem>
@@ -124,8 +121,17 @@ export default function Footer() {
               <UncontrolledTooltip delay={0} target="tooltip318450378">
                 Follow us
               </UncontrolledTooltip>
+              <Button
+  className="btn-icon btn-neutral btn-round btn-simple float-right"
+  color="default"
+  onClick={scrollToTop}
+>
+  <i className="fa fa-arrow-up fa-lg" />
+</Button>
             </div>
+
           </Col>
+
         </Row>
       </Container>
     </footer>

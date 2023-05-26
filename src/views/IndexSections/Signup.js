@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import classnames from "classnames";
 import { Link, useHistory } from "react-router-dom";
 import {
@@ -34,6 +34,7 @@ import {
 
 export default function Signup() {
   const history = useHistory();
+  const [showMoreCards, setShowMoreCards] = useState(false);
 
   const handleSurpriseMe = () => {
     const routes = [
@@ -45,6 +46,10 @@ export default function Signup() {
     const randomIndex = Math.floor(Math.random() * routes.length);
     const selectedRoute = routes[randomIndex];
     history.push(selectedRoute);
+  };
+
+  const handleSeeMore = () => {
+    setShowMoreCards(true);
   };
 
   useEffect(() => {
@@ -241,9 +246,87 @@ export default function Signup() {
                   Veja o Perfil
                 </Button>
               </CardFooter>
+
             </Card>
           </Col>
+          {showMoreCards ? (
+  <>
+    <Col className="mb-lg-auto" lg="5">
+    <Card className="card-register" color="red">
+              <CardHeader>
+                <CardImg alt="..." src={require("assets/img/square4.png")} />
+                <CardTitle tag="h4">Da Hora</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <Badge className="badge-default">Tecnologia</Badge>
+                <Badge className="badge-default">Hacker do Bem</Badge>
+                <Badge className="badge-default">inclusão</Badge>
+                <Badge className="badge-default">Segurança</Badge>
+                <Badge className="badge-default">racismo algoritmico</Badge>
+              </CardBody>
+              <CardFooter>
+                <img
+                  alt="..."
+                  className="img-fluid rounded-circle shadow-lg"
+                  src={require("assets/img/ninalogo2.jpg")}
+                  style={{ width: "150px" }}
+                />
+                <Button
+                  className="btn-round"
+                  href="/profile-page5"
+                  color="info"
+                  size="lg"
+                >
+                  Veja o Perfil
+                </Button>
+              </CardFooter>
+
+            </Card>
+    </Col>
+    <Col className="mb-lg-auto" lg="5">
+    <Card className="card-register" color="red">
+              <CardHeader>
+                <CardImg alt="..." src={require("assets/img/square4.png")} />
+                <CardTitle tag="h4">Da Hora</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <Badge className="badge-default">Tecnologia</Badge>
+                <Badge className="badge-default">Hacker do Bem</Badge>
+                <Badge className="badge-default">inclusão</Badge>
+                <Badge className="badge-default">Segurança</Badge>
+                <Badge className="badge-default">racismo algoritmico</Badge>
+              </CardBody>
+              <CardFooter>
+                <img
+                  alt="..."
+                  className="img-fluid rounded-circle shadow-lg"
+                  src={require("assets/img/ninalogo2.jpg")}
+                  style={{ width: "150px" }}
+                />
+                <Button
+                  className="btn-round"
+                  href="/profile-page5"
+                  color="info"
+                  size="lg"
+                >
+                  Veja o Perfil
+                </Button>
+              </CardFooter>
+
+            </Card>
+    </Col>
+  </>
+) : null}
+
         </Row>
+        {!showMoreCards && (
+  <div className="text-center mt-5">
+    <Button color="primary" onClick={handleSeeMore}>
+      Veja mais
+    </Button>
+  </div>
+)}
+
       </Container>
     </div>
   );

@@ -16,39 +16,24 @@
 
 */
 import React from "react";
-import classnames from "classnames";
+
 // reactstrap components
 import {
   Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  CardImg,
-  CardTitle,
-  Label,
-  FormGroup,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
 
 import Footer from "components/Footer/Footer.js";
-import IndexNavbar from 'components/Navbars/IndexNavbar';
+import IndexNavbar from "components/Navbars/IndexNavbar";
 
 export default function RegisterPage() {
   const [squares1to6, setSquares1to6] = React.useState("");
   const [squares7and8, setSquares7and8] = React.useState("");
-  const [fullNameFocus, setFullNameFocus] = React.useState(false);
-  const [emailFocus, setEmailFocus] = React.useState(false);
-  const [passwordFocus, setPasswordFocus] = React.useState(false);
+
   React.useEffect(() => {
     document.body.classList.toggle("register-page");
     document.documentElement.addEventListener("mousemove", followCursor);
@@ -78,62 +63,110 @@ export default function RegisterPage() {
   };
   return (
     <>
-      <IndexNavbar/>
+      <IndexNavbar />
       <div className="wrapper">
         <div className="page-header">
           <div className="page-header-image" />
           <div className="content">
+            <img
+              alt="..."
+              className="img-fluid  shadow-lg"
+              src={require("assets/img/fotopreferidaGefferson.jpg")}
+              style={{ width: "200px" }}
+            />
             <Container>
-              <Row>
-                <Col className="offset-lg-0 offset-md-3" lg="5" md="6">
-                  <div
-                    className="square square-7"
-                    id="square7"
-                    style={{ transform: squares7and8 }}
-                  />
-                  <div
-                    className="square square-8"
-                    id="square8"
-                    style={{ transform: squares7and8 }}
-                  />
-                  <Card className="card-register">
-                    <CardHeader>
-                      <CardImg
-                        alt="..."
-                        src={require("assets/img/square-purple-1.png")}
-                      />
-                      <CardTitle tag="h4">Sobre</CardTitle>
-                    </CardHeader>
+              <div className="content-center">
+                <Row className="row-grid justify-content-between align-items-center text-left">
+                  <Col lg="6" md="6">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
 
+                    <div className="typography-line">
+                      <blockquote>
+                        <p className="blockquote blockquote">
+                          "No SlothCode, acreditamos que o conhecimento é um
+                          direito universal. Estamos empenhados em quebrar
+                          barreiras e tornar o acesso ao aprendizado uma
+                          realidade para todos, abrindo portas para o
+                          crescimento pessoal e coletivo." <br />
+                          <br />
+                          <small>- Gefferson Severo da Trindade Ramos</small>
+                        </p>
+                      </blockquote>
+                    </div>
+                    <div className="btn-wrapper mb-3">
 
-
-
-
-
-                    <CardFooter>
-                      <Button className="btn-round" color="primary" size="lg">
-                        Get Started
-                      </Button>
-                    </CardFooter>
-                  </Card>
-                </Col>
-              </Row>
+                    </div>
+                    <div className="btn-wrapper">
+                      <div className="button-container">
+                        <Button
+                          className="btn-icon btn-simple btn-round btn-neutral"
+                          color="default"
+                          href="https://github.com/GeffersonST"
+                        target="_blank"
+                        >
+                          <i className="fab fa-github" />
+                        </Button>
+                        <Button
+                          className="btn-icon btn-simple btn-round btn-neutral"
+                          color="default"
+                          href="https://www.instagram.com/geffersonsevero/"
+                        target="_blank"
+                        >
+                          <i className="fab fa-instagram" />
+                        </Button>
+                        <Button
+                          className="btn-icon btn-simple btn-round btn-neutral"
+                          color="default"
+                          href="https://www.linkedin.com/in/gefferson-severo-da-trindade-ramos-510010115/"
+                        target="_blank"
+                        >
+                          <i className="fab fa-linkedin" />
+                        </Button>
+                        <Button
+                          className="btn-icon btn-simple btn-round btn-neutral"
+                          color="default"
+                          href="https://www.artstation.com/geffst"
+                        target="_blank"
+                        >
+                          <i className="tim-icons icon-palette" />
+                        </Button>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col lg="4" md="5">
+                    <img
+                      alt="..."
+                      className="img-fluid"
+                      src={require("assets/img/slothlogodefinitive.png")}
+                    />
+                  </Col>
+                </Row>
+              </div>
               <div className="register-bg" />
               <div
-                className="square square-1"
+                className="square square-9"
                 id="square1"
                 style={{ transform: squares1to6 }}
               />
+
               <div
                 className="square square-2"
                 id="square2"
                 style={{ transform: squares1to6 }}
               />
+
               <div
                 className="square square-3"
                 id="square3"
                 style={{ transform: squares1to6 }}
               />
+
               <div
                 className="square square-4"
                 id="square4"
@@ -148,6 +181,11 @@ export default function RegisterPage() {
                 className="square square-6"
                 id="square6"
                 style={{ transform: squares1to6 }}
+              />
+              <div
+                className="square square-7"
+                id="square6"
+                style={{ transform: squares7and8 }}
               />
             </Container>
           </div>

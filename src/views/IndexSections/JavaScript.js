@@ -42,11 +42,7 @@ import {
 } from "reactstrap";
 
 const carouselItems = [
-  {
-    src: require("assets/img/slothbig2.png"),
-    altText: "Slide 1",
-    caption: "",
-  },
+
   {
     src: require("assets/img/react2.png"),
     altText: "Slide 2",
@@ -106,13 +102,7 @@ export default function JavaScript() {
                 contínuo e empoderamento tecnológico. Juntos, vamos explorar o
                 universo do conhecimento e construir um futuro melhor.
               </p>
-              <Button
-                className="mt-4"
-                color="warning"
-                href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alert"
-              >
-                See all components
-              </Button>
+
             </Col>
             <Col lg="4">
             <UncontrolledCarousel

@@ -58,7 +58,7 @@ export default function Tabs() {
                       href="#pablo"
                     >
                       <i className="tim-icons icon-spaceship" />
-                      Profissionais
+                      Perfis
                     </NavLink>
                   </NavItem>
                   <NavItem>

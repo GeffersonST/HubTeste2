@@ -36,6 +36,7 @@ import PlatformPage3 from 'views/examples/PlatformPage3';
 import PlatformPage4 from 'views/examples/PlatformPage4';
 import ProfilePage5 from 'views/examples/ProfilePage5';
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -47,7 +48,7 @@ root.render(
         render={(props) => <LandingPage {...props} />}
       />
       <Route
-        path="/register-page"
+        path="/about-page"
         render={(props) => <RegisterPage {...props} />}
       />
       <Route
@@ -86,6 +87,7 @@ root.render(
         path="/platform-page4"
         render={(props) => <PlatformPage4 {...props} />}
       />
+
       <Redirect from="/" to="/components" />
     </Switch>
   </BrowserRouter>

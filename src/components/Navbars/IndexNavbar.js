@@ -124,41 +124,19 @@ export default function IndexNavbar() {
             </Row>
           </div>
           <Nav navbar>
+
             <NavItem className="p-0">
+            <i className="tim-icons icon-planet" />
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
+                href="/about-page"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fab fa-twitter" />
-                <p className="d-lg-none d-xl-none">Twitter</p>
+                title="Sobre"
+              > Sobre
+
               </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fab fa-facebook-square" />
-                <p className="d-lg-none d-xl-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fab fa-instagram" />
-                <p className="d-lg-none d-xl-none">Instagram</p>
-              </NavLink>
+
             </NavItem>
             <UncontrolledDropdown nav>
               <DropdownToggle
@@ -169,25 +147,80 @@ export default function IndexNavbar() {
                 nav
                 onClick={(e) => e.preventDefault()}
               >
-                <i className="fa fa-cogs d-lg-none d-xl-none" />
-                Getting started
+                <i className="tim-icons icon-single-02" />
+                Perfis
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem tag={Link} to="/register-page">
-                  <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
+                <DropdownItem href='/profile-page'>
+                  <i className="tim-icons icon-single-02" />
+                  Gustavo Guanabara
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
-                  <i className="tim-icons icon-image-02" />
-                  Landing Page
+                <DropdownItem href='/profile-page2'>
+                  <i className="tim-icons icon-single-02" />
+                  Filipe Deschamps
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/profile-page">
+                <DropdownItem href='/profile-page3'>
+                  <i className="tim-icons icon-single-02" />
+                  Loiane Groner
+                </DropdownItem>
+                <DropdownItem href='/profile-page4'>
+                  <i className="tim-icons icon-single-02" />
+                  Karol Attekita
+                </DropdownItem>
+                <DropdownItem href='/profile-page5'>
+                  <i className="tim-icons icon-single-02" />
+                  Nina da Hora
+                </DropdownItem>
+                <DropdownItem href='/profile-page4'>
                   <i className="tim-icons icon-single-02" />
                   Profile Page
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/profile-page2">
+                <DropdownItem href='/profile-page4'>
                   <i className="tim-icons icon-single-02" />
                   Profile Page
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav>
+              <DropdownToggle
+                caret
+                color="default"
+                data-toggle="dropdown"
+                href="#pablo"
+                nav
+                onClick={(e) => e.preventDefault()}
+              >
+                <i className="tim-icons icon-laptop" />
+                Plataformas
+              </DropdownToggle>
+              <DropdownMenu className="dropdown-with-icons">
+                <DropdownItem href='/platform-page'>
+                  <i className="tim-icons icon-laptop" />
+                  Rocketseat
+                </DropdownItem>
+                <DropdownItem href='/platform-page2'>
+                  <i className="tim-icons icon-laptop" />
+                  Digital Innovation one
+                </DropdownItem>
+                <DropdownItem href='/platform-page3'>
+                  <i className="tim-icons icon-laptop" />
+                  FreeCodeCamp
+                </DropdownItem>
+                <DropdownItem href='/platform-page4'>
+                  <i className="tim-icons icon-laptop" />
+                  Coursera
+                </DropdownItem>
+                <DropdownItem href='/profile-page5'>
+                  <i className="tim-icons icon-laptop" />
+                  Outra Plataforma
+                </DropdownItem>
+                <DropdownItem href='/profile-page4'>
+                  <i className="tim-icons icon-laptop" />
+                  Outra Plataforma
+                </DropdownItem>
+                <DropdownItem href='/profile-page4'>
+                  <i className="tim-icons icon-laptop" />
+                  Outra Plataforma
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -238,9 +271,7 @@ export default function IndexNavbar() {
                   </p>
                 </div>
                 <div className="modal-footer">
-                  <Button color="default" type="button">
-                    Nice Button
-                  </Button>
+
                   <Button
                     color="danger"
                     type="button"
