@@ -102,7 +102,7 @@ export default function AboutPage() {
                   <Button
                     className="btn-link"
                     color="success"
-                    href="#pablo"
+                    href="#sloth"
                     onClick={(e) => e.preventDefault()}
                     size="sm"
                   >
@@ -114,7 +114,7 @@ export default function AboutPage() {
                     <Button
                       className="btn-icon btn-simple btn-round btn-neutral"
                       color="default"
-                      href="#pablo"
+                      href="#sloth"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter" />
@@ -122,7 +122,7 @@ export default function AboutPage() {
                     <Button
                       className="btn-icon btn-simple btn-round btn-neutral"
                       color="default"
-                      href="#pablo"
+                      href="#sloth"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-dribbble" />
@@ -130,7 +130,7 @@ export default function AboutPage() {
                     <Button
                       className="btn-icon btn-simple btn-round btn-neutral"
                       color="default"
-                      href="#pablo"
+                      href="#sloth"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-facebook" />
@@ -263,7 +263,7 @@ export default function AboutPage() {
                     <br />
                     <a
                       className="font-weight-bold text-info mt-5"
-                      href="#pablo"
+                      href="#sloth"
                       onClick={(e) => e.preventDefault()}
                     >
                       Show all{" "}

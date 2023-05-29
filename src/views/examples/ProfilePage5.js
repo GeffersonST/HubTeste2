@@ -185,7 +185,7 @@ export default function ProfilePage5() {
                             e.preventDefault();
                             setTabs(1);
                           }}
-                          href="#pablo"
+                          href="#sloth"
                         >
                           Youtube
                         </NavLink>

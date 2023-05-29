@@ -108,7 +108,7 @@ export default function IndexNavbar() {
           <div className="navbar-collapse-header">
             <Row>
               <Col className="collapse-brand" xs="6">
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                <a href="#logo" onClick={(e) => e.preventDefault()}>
                   Sloth•Code
                 </a>
               </Col>
@@ -143,7 +143,7 @@ export default function IndexNavbar() {
                 caret
                 color="default"
                 data-toggle="dropdown"
-                href="#pablo"
+                href="#sloth"
                 nav
                 onClick={(e) => e.preventDefault()}
               >
@@ -186,7 +186,7 @@ export default function IndexNavbar() {
                 caret
                 color="default"
                 data-toggle="dropdown"
-                href="#pablo"
+                href="#drop"
                 nav
                 onClick={(e) => e.preventDefault()}
               >

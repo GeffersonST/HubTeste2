@@ -55,7 +55,7 @@ export default function Tabs() {
                         active: iconTabs === 1,
                       })}
                       onClick={(e) => setIconsTabs(1)}
-                      href="#pablo"
+                      href="#sloth"
                     >
                       <i className="tim-icons icon-spaceship" />
                       Perfis
@@ -67,7 +67,7 @@ export default function Tabs() {
                         active: iconTabs === 2,
                       })}
                       onClick={(e) => setIconsTabs(2)}
-                      href="#pablo"
+                      href="#sloth"
                     >
                       <i className="tim-icons icon-settings-gear-63" />
                       Plataformas
@@ -79,7 +79,7 @@ export default function Tabs() {
                         active: iconTabs === 3,
                       })}
                       onClick={(e) => setIconsTabs(3)}
-                      href="#pablo"
+                      href="#sloth"
                     >
                       <i className="tim-icons icon-bag-16" />
                       Gratuito

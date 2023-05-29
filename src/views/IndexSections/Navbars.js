@@ -43,7 +43,7 @@ export default function Navbars() {
             <h4>Menu</h4>
             <Navbar className="bg-primary" expand="lg">
               <Container>
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                <NavbarBrand href="#sloth" onClick={(e) => e.preventDefault()}>
                   Menu
                 </NavbarBrand>
                 <button className="navbar-toggler" aria-expanded={false}>
@@ -55,7 +55,7 @@ export default function Navbars() {
                   <Nav navbar>
                     <NavItem className="active">
                       <NavLink
-                        href="#pablo"
+                        href="#sloth"
                         onClick={(e) => e.preventDefault()}
                       >
                         <p>Link</p>
@@ -63,7 +63,7 @@ export default function Navbars() {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="#pablo"
+                        href="#sloth"
                         onClick={(e) => e.preventDefault()}
                       >
                         <p>Link</p>
@@ -84,19 +84,19 @@ export default function Navbars() {
                       </DropdownToggle>
                       <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                         <DropdownItem
-                          href="#pablo"
+                          href="#sloth"
                           onClick={(e) => e.preventDefault()}
                         >
                           Action
                         </DropdownItem>
                         <DropdownItem
-                          href="#pablo"
+                          href="#sloth"
                           onClick={(e) => e.preventDefault()}
                         >
                           Another action
                         </DropdownItem>
                         <DropdownItem
-                          href="#pablo"
+                          href="#sloth"
                           onClick={(e) => e.preventDefault()}
                         >
                           Something else here
@@ -112,7 +112,7 @@ export default function Navbars() {
             <h4>Menu with Icons</h4>
             <Navbar className="bg-info" expand="lg">
               <Container>
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                <NavbarBrand href="#sloth" onClick={(e) => e.preventDefault()}>
                   Icons
                 </NavbarBrand>
                 <button className="navbar-toggler" aria-expanded={false}>
@@ -124,7 +124,7 @@ export default function Navbars() {
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink
-                        href="#pablo"
+                        href="#sloth"
                         onClick={(e) => e.preventDefault()}
                       >
                         <i aria-hidden={true} className="tim-icons icon-send" />
@@ -132,7 +132,7 @@ export default function Navbars() {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        href="#pablo"
+                        href="#sloth"
                         onClick={(e) => e.preventDefault()}
                       >
                         <i
@@ -146,7 +146,7 @@ export default function Navbars() {
                         caret
                         color="default"
                         data-toggle="dropdown"
-                        href="#pablo"
+                        href="#sloth"
                         id="navbarDropdownMenuLink"
                         nav
                         onClick={(e) => e.preventDefault()}
@@ -162,33 +162,33 @@ export default function Navbars() {
                       >
                         <DropdownItem header>Dropdown header</DropdownItem>
                         <DropdownItem
-                          href="#pablo"
+                          href="#sloth"
                           onClick={(e) => e.preventDefault()}
                         >
                           Action
                         </DropdownItem>
                         <DropdownItem
-                          href="#pablo"
+                          href="#sloth"
                           onClick={(e) => e.preventDefault()}
                         >
                           Another action
                         </DropdownItem>
                         <DropdownItem
-                          href="#pablo"
+                          href="#sloth"
                           onClick={(e) => e.preventDefault()}
                         >
                           Something else here
                         </DropdownItem>
                         <div className="divider" />
                         <DropdownItem
-                          href="#pablo"
+                          href="#sloth"
                           onClick={(e) => e.preventDefault()}
                         >
                           Separated link
                         </DropdownItem>
                         <div className="divider" />
                         <DropdownItem
-                          href="#pablo"
+                          href="#sloth"
                           onClick={(e) => e.preventDefault()}
                         >
                           One more separated link
@@ -209,7 +209,7 @@ export default function Navbars() {
           <Navbar className="bg-primary" expand="lg">
             <Container>
               <div className="navbar-translate">
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                <NavbarBrand href="#sloth" onClick={(e) => e.preventDefault()}>
                   Primary color
                 </NavbarBrand>
                 <button className="navbar-toggler" aria-expanded={false}>
@@ -221,19 +221,19 @@ export default function Navbars() {
               <Collapse navbar isOpen={false}>
                 <Nav className="ml-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="tim-icons icon-world" />
                       Discover
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="tim-icons icon-single-02" />
                       Profile
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="tim-icons icon-settings-gear-63" />
                       Settings
                     </NavLink>
@@ -247,7 +247,7 @@ export default function Navbars() {
           <Navbar className="bg-info" expand="lg">
             <Container>
               <div className="navbar-translate">
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                <NavbarBrand href="#sloth" onClick={(e) => e.preventDefault()}>
                   Info Color
                 </NavbarBrand>
                 <button className="navbar-toggler" aria-expanded={false}>
@@ -259,17 +259,17 @@ export default function Navbars() {
               <Collapse navbar isOpen={false}>
                 <Nav className="ml-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       Discover
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       Profile
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       Settings
                     </NavLink>
                   </NavItem>
@@ -282,7 +282,7 @@ export default function Navbars() {
           <Navbar className="bg-success" expand="lg">
             <Container>
               <div className="navbar-translate">
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                <NavbarBrand href="#sloth" onClick={(e) => e.preventDefault()}>
                   Success Color
                 </NavbarBrand>
                 <button className="navbar-toggler" aria-expanded={false}>
@@ -294,17 +294,17 @@ export default function Navbars() {
               <Collapse navbar isOpen={false}>
                 <Nav className="ml-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="tim-icons icon-world" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="tim-icons icon-single-02" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="tim-icons icon-settings-gear-63" />
                     </NavLink>
                   </NavItem>
@@ -317,7 +317,7 @@ export default function Navbars() {
           <Navbar className="bg-warning" expand="lg">
             <Container>
               <div className="navbar-translate">
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                <NavbarBrand href="#sloth" onClick={(e) => e.preventDefault()}>
                   Warning Color
                 </NavbarBrand>
                 <button className="navbar-toggler" aria-expanded={false}>
@@ -329,22 +329,22 @@ export default function Navbars() {
               <Collapse navbar isOpen={false}>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-facebook-square" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-twitter" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-google-plus" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-instagram" />
                     </NavLink>
                   </NavItem>
@@ -357,7 +357,7 @@ export default function Navbars() {
           <Navbar className="bg-danger" expand="lg">
             <Container>
               <div className="navbar-translate">
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                <NavbarBrand href="#sloth" onClick={(e) => e.preventDefault()}>
                   Danger Color
                 </NavbarBrand>
                 <button className="navbar-toggler" aria-expanded={false}>
@@ -369,19 +369,19 @@ export default function Navbars() {
               <Collapse navbar isOpen={false}>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-facebook-square" />
                       Share
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-twitter" />
                       Tweet
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-pinterest" />
                       Pin
                     </NavLink>
@@ -395,7 +395,7 @@ export default function Navbars() {
           <Navbar className="navbar-transparent" expand="lg">
             <Container>
               <div className="navbar-translate">
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                <NavbarBrand href="#sloth" onClick={(e) => e.preventDefault()}>
                   Transparent
                 </NavbarBrand>
                 <button className="navbar-toggler" aria-expanded={false}>
@@ -407,19 +407,19 @@ export default function Navbars() {
               <Collapse navbar isOpen={false}>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-facebook-square" />
                       Facebook
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-twitter" />
                       Twitter
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="#sloth" onClick={(e) => e.preventDefault()}>
                       <i className="fab fa-instagram" />
                       Instagram
                     </NavLink>

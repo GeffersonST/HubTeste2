@@ -67,7 +67,7 @@ export default function PaginationSection() {
                     "active show": pills === 1
                   })}
                   onClick={(e) => setPills(2)}
-                  href="#pablo"
+                  href="#sloth"
                 >
                   <i className="tim-icons icon-atom" />
                   Home
@@ -79,7 +79,7 @@ export default function PaginationSection() {
                     "active show": pills === 2
                   })}
                   onClick={(e) => setPills(2)}
-                  href="#pablo"
+                  href="#sloth"
                 >
                   <i className="tim-icons icon-chat-33" />
                   Messages
@@ -91,7 +91,7 @@ export default function PaginationSection() {
                     "active show": pills === 3
                   })}
                   onClick={(e) => setPills(3)}
-                  href="#pablo"
+                  href="#sloth"
                 >
                   <i className="tim-icons icon-settings-gear-63" />
                   Settings
@@ -107,7 +107,7 @@ export default function PaginationSection() {
             >
               <PaginationItem className="active">
                 <PaginationLink
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   1
@@ -115,7 +115,7 @@ export default function PaginationSection() {
               </PaginationItem>
               <PaginationItem>
                 <PaginationLink
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   2
@@ -123,7 +123,7 @@ export default function PaginationSection() {
               </PaginationItem>
               <PaginationItem>
                 <PaginationLink
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   3
@@ -131,7 +131,7 @@ export default function PaginationSection() {
               </PaginationItem>
               <PaginationItem>
                 <PaginationLink
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   4
@@ -139,7 +139,7 @@ export default function PaginationSection() {
               </PaginationItem>
               <PaginationItem>
                 <PaginationLink
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   5
@@ -153,7 +153,7 @@ export default function PaginationSection() {
               <PaginationItem>
                 <PaginationLink
                   aria-label="Previous"
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   <span aria-hidden={true}>
@@ -166,7 +166,7 @@ export default function PaginationSection() {
               </PaginationItem>
               <PaginationItem>
                 <PaginationLink
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   1
@@ -174,7 +174,7 @@ export default function PaginationSection() {
               </PaginationItem>
               <PaginationItem className="active">
                 <PaginationLink
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   2
@@ -182,7 +182,7 @@ export default function PaginationSection() {
               </PaginationItem>
               <PaginationItem>
                 <PaginationLink
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   3
@@ -191,7 +191,7 @@ export default function PaginationSection() {
               <PaginationItem>
                 <PaginationLink
                   aria-label="Next"
-                  href="#pablo"
+                  href="#sloth"
                   onClick={(e) => e.preventDefault()}
                 >
                   <span aria-hidden={true}>
