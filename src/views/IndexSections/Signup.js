@@ -252,28 +252,28 @@ export default function Signup() {
           {showMoreCards ? (
   <>
     <Col className="mb-lg-auto" lg="5">
-    <Card className="card-register" color="red">
+    <Card className="card-register" color="info">
               <CardHeader>
-                <CardImg alt="..." src={require("assets/img/square4.png")} />
-                <CardTitle tag="h4">Da Hora</CardTitle>
+                <CardImg alt="..." src={require("assets/img/square5.png")} />
+                <CardTitle tag="h4">Akita</CardTitle>
               </CardHeader>
               <CardBody>
                 <Badge className="badge-default">Tecnologia</Badge>
-                <Badge className="badge-default">Hacker do Bem</Badge>
-                <Badge className="badge-default">inclusão</Badge>
-                <Badge className="badge-default">Segurança</Badge>
-                <Badge className="badge-default">racismo algoritmico</Badge>
+                <Badge className="badge-default">RubyOnRails</Badge>
+                <Badge className="badge-default">Educação Tecnológica</Badge>
+                <Badge className="badge-default">Inspiração</Badge>
+
               </CardBody>
               <CardFooter>
                 <img
                   alt="..."
                   className="img-fluid rounded-circle shadow-lg"
-                  src={require("assets/img/ninalogo2.jpg")}
+                  src={require("assets/img/akitalogo.jpg")}
                   style={{ width: "150px" }}
                 />
                 <Button
                   className="btn-round"
-                  href="/profile-page5"
+                  href="/profile-page6"
                   color="info"
                   size="lg"
                 >
@@ -284,28 +284,28 @@ export default function Signup() {
             </Card>
     </Col>
     <Col className="mb-lg-auto" lg="5">
-    <Card className="card-register" color="red">
+    <Card className="card-register" color='secondary'>
               <CardHeader>
-                <CardImg alt="..." src={require("assets/img/square4.png")} />
-                <CardTitle tag="h4">Da Hora</CardTitle>
+                <CardImg alt="..." src={require("assets/img/square6.png")} />
+                <CardTitle tag="h4">Oliveira</CardTitle>
               </CardHeader>
               <CardBody>
                 <Badge className="badge-default">Tecnologia</Badge>
-                <Badge className="badge-default">Hacker do Bem</Badge>
-                <Badge className="badge-default">inclusão</Badge>
-                <Badge className="badge-default">Segurança</Badge>
-                <Badge className="badge-default">racismo algoritmico</Badge>
+                <Badge className="badge-default">Experiência</Badge>
+                <Badge className="badge-default">Portugal</Badge>
+                <Badge className="badge-default">Entrevistas</Badge>
+                <Badge className="badge-default">DevGym</Badge>
               </CardBody>
               <CardFooter>
                 <img
                   alt="..."
                   className="img-fluid rounded-circle shadow-lg"
-                  src={require("assets/img/ninalogo2.jpg")}
+                  src={require("assets/img/nuvem1.jpg")}
                   style={{ width: "150px" }}
                 />
                 <Button
                   className="btn-round"
-                  href="/profile-page5"
+                  href="/profile-page7"
                   color="info"
                   size="lg"
                 >

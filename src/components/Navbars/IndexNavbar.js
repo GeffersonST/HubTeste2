@@ -171,13 +171,13 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-single-02" />
                   Nina da Hora
                 </DropdownItem>
-                <DropdownItem href='/profile-page4'>
+                <DropdownItem href='/profile-page6'>
                   <i className="tim-icons icon-single-02" />
-                  Profile Page
+                  Fabio Akita
                 </DropdownItem>
-                <DropdownItem href='/profile-page4'>
+                <DropdownItem href='/profile-page7'>
                   <i className="tim-icons icon-single-02" />
-                  Profile Page
+                  Claudson Oliveira
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -210,18 +210,7 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-laptop" />
                   Coursera
                 </DropdownItem>
-                <DropdownItem href='/profile-page5'>
-                  <i className="tim-icons icon-laptop" />
-                  Outra Plataforma
-                </DropdownItem>
-                <DropdownItem href='/profile-page4'>
-                  <i className="tim-icons icon-laptop" />
-                  Outra Plataforma
-                </DropdownItem>
-                <DropdownItem href='/profile-page4'>
-                  <i className="tim-icons icon-laptop" />
-                  Outra Plataforma
-                </DropdownItem>
+
               </DropdownMenu>
             </UncontrolledDropdown>
 
@@ -277,7 +266,7 @@ export default function IndexNavbar() {
                     type="button"
                     onClick={() => setDemoModal(false)}
                   >
-                    Close
+                    Fechar
                   </Button>
                 </div>
               </Modal>
