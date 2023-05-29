@@ -52,17 +52,17 @@ const carouselItems = [
   {
     src: require("assets/img/nuvemimage1].jpg"),
     altText: "Slide 1",
-    caption: "Fabio Akita no estúdio",
+    caption: "Claudson no Youtube",
   },
   {
     src: require("assets/img/nuvemimage2.jpg"),
     altText: "Slide 2",
-    caption: "A Dor de aprender",
+    caption: "Entrevista",
   },
   {
     src: require("assets/img/nuvemimage3.jpg"),
     altText: "Slide 3",
-    caption: "Back-end para iniciantes",
+    caption: "Vídeo sobre Inglês",
   },
 ];
 
