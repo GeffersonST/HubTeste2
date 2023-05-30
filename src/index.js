@@ -19,24 +19,24 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "assets/css/nucleo-icons.css";
-import "assets/scss/blk-design-system-react.scss";
-import "assets/demo/demo.css";
+import "./assets/css/nucleo-icons.css";
+import "./assets/scss/blk-design-system-react.scss";
+import "./assets/demo/demo.css";
 
 import Index from "views/Index.js";
 
-import RegisterPage from "views/examples/RegisterPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import ProfilePage2 from 'views/examples/ProfilePage2';
-import ProfilePage3 from 'views/examples/ProfilePage3';
-import ProfilePage4 from 'views/examples/ProfilePage4';
-import PlatformPage from 'views/examples/PlatformPage';
-import PlatformPage2 from 'views/examples/PlatformPage2';
-import PlatformPage3 from 'views/examples/PlatformPage3';
-import PlatformPage4 from 'views/examples/PlatformPage4';
-import ProfilePage5 from 'views/examples/ProfilePage5';
-import ProfilePage6 from 'views/examples/ProfilePage6';
-import ProfilePage7 from 'views/examples/ProfilePage7';
+import RegisterPage from "./views/examples/RegisterPage.js";
+import ProfilePage from "./views/examples/ProfilePage.js";
+import ProfilePage2 from './views/examples/ProfilePage2';
+import ProfilePage3 from './views/examples/ProfilePage3';
+import ProfilePage4 from './views/examples/ProfilePage4';
+import PlatformPage from './views/examples/PlatformPage';
+import PlatformPage2 from './views/examples/PlatformPage2';
+import PlatformPage3 from './views/examples/PlatformPage3';
+import PlatformPage4 from './views/examples/PlatformPage4';
+import ProfilePage5 from './views/examples/ProfilePage5';
+import ProfilePage6 from './views/examples/ProfilePage6';
+import ProfilePage7 from './views/examples/ProfilePage7';
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
