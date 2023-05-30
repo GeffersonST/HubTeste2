@@ -36,23 +36,23 @@
     "@testing-library/react": "13.3.0",
     "@testing-library/user-event": "14.4.1",
     "bootstrap": "4.5.3",
-
     "classnames": "2.3.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
     "moment": "2.29.4",
     "nouislider": "14.6.3",
     "perfect-scrollbar": "1.5.5",
-    "react": "18.2.0",
-
+    "react": ">=16.8.0",
     "react-datetime": "3.1.1",
-    "react-dom": "18.2.0",
+    "react-dom": ">=16.8.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "5.0.1",
     "reactstrap": "8.7.1",
     "sass": "1.54.0",
     "web-vitals": "2.1.4"
   },
+
+
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
@@ -62,9 +62,9 @@
     "typescript": "4.7.4"
   },
   "scripts": {
-    "build": "react-scripts build --no-warnings",
-    "start": "react-scripts start",
+    "deploy" : "npm run build&&gh-pages -d build",
     "build": "react-scripts build && gulp licenses",
+    "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
@@ -88,5 +88,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
